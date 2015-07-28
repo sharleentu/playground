@@ -1,0 +1,49 @@
+<a type="button" class="btn btn-primary" ui-sref="purchase"> Back </a>
+<div class='gray-box'>
+	<h2> {{ order.name }} </h2>
+	<div class='text-right'>
+	<h3> {{ order.cost }} USD </h3>
+	<h4> {{ order.repname }} </h4>
+	</div>
+</div>
+<div class="text-left ">
+	<p> <strong>Purchase Order: </strong>{{ order.order_num }} </p>
+	<p> <strong>Delivery Date: </strong> {{ order.date }} </p>	
+	<p> <strong>Office: </strong> {{ order.office }} </p>	
+</div>
+<hr>
+
+<h3> Items ({{order.n_types}})</h3>
+
+<table class='table table-hover table-bordered'> 
+	<thead> 
+		<tr>
+			<td><strong>Description</strong></td>
+			<td><strong>Item</strong></td>
+			<td><strong>Category</strong></td>
+			<td><strong>Quantity</strong></td>
+			<td><strong>Subtotal</strong></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat='item in items'>
+			<td><a ui-sref='detail_item({id: order.id, itemid: item.item_id})'>{{ item.item_name }}</a></td>
+			<td>{{ item.item_id }}</td>
+			<td>{{ item.sku }}</td>
+			<td>{{ item.quant }} piece(s)</td>
+			<td>{{ item.subtotal }}</td>
+		</tr>
+	</tbody>
+</table>
+<hr>	
+
+<h3> Attachments </h3>
+<hr>
+<h3> Notes </h3>
+<div ng-repeat='item in items'> 
+	<div> {{item.notes}} 
+	</div>
+</div>
+
+<a class="btn btn-success ">Approve</a> 
+<a class="btn btn-warning ">Reject</a>

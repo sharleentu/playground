@@ -1,0 +1,26 @@
+<h3>Purchase Aquisition Orders</h3>
+	<table class='table table-bordered table-hover'> 
+		<thead id='table-header'>
+			<td> Company Name </td>
+			<td> Item Count </td>
+			<td> Total Cost </td>
+			<td> Representative Name </td>
+			<td></td>
+			<td></td>
+		</thead>
+		<tbody>
+			<tr ng-repeat="order in orders | filter : { show: 'true'}"> 
+				<td> <a ui-sref='detail({id: order.id})'>{{ order.name }} </a></td>
+				<td> {{ order.n_types }} </td>
+				<td> {{ order.cost }} </td>
+				<td> {{ order.repname }} </td>
+				<td>
+					 <a class="btn btn-success btn-xs">Approve</a> 
+				</td>
+				<td>
+					 <a class="btn btn-warning btn-xs">Reject</a>
+				</td>				
+			</tr>
+		</tbody>
+	</table>	
+</div>

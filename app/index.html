@@ -21,39 +21,42 @@
 
     <!-- Add your site or application content here -->
     <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
+      <div class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="container-custom">
           <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+         <!--    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-            </button>
+            </button> -->
 
-            <a class="navbar-brand" href="#/">angularTest</a>
+            <a class="navbar-brand" ui-sref="/">Capriza Playground</a>
           </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
+          <!-- <div class="collapse navbar-collapse" id="js-navbar-collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li><a ui-sref="purchase">Purchase Req orders</a></li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
 
-    <div class="container">
-    <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+  <div class="container-custom">
+      <div ui-view>
+        <i>Some content will load here!</i>
+      </div>
     </div>
+  <!--   <div class="container">
+      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+    </div> -->
 
     <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <div class="container-custom">
+        <p><span class="glyphicon glyphicon-check"></span> Capriza Playground </p>
       </div>
     </div>
 
@@ -79,12 +82,18 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/PurchaseCtrl.js"></script>
+        <script src="scripts/controllers/OrderService.js"></script>
+        <script src="scripts/controllers/DetailCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>
