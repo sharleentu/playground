@@ -4,7 +4,7 @@ angular.module('OrderService',[]).factory('OrderService', function() {
 	var orders = [
 	  {	
 	  	id: "1", 
-	  	show: "true",
+	  	show: true,
 	  	name: "Industrial Suppliers", 
 	  	cost: "6200.00", 
 	  	n_types: "1", 
@@ -12,7 +12,7 @@ angular.module('OrderService',[]).factory('OrderService', function() {
 	  	order_num: "4100023",
 	  	account_num: "Cost Center Purchasing",
 	  	date: "August 1, 2015",
-	  	code: "2015",
+	  	code: "2015", 
 
 	  	items: [{ 
 		  	addr: "212 Hamilton Ave. Palo Alto, CA",
@@ -31,7 +31,7 @@ angular.module('OrderService',[]).factory('OrderService', function() {
 	  },
 	  {	
 	  	id: "2", 
-	  	show: "true",
+	  	show: true,
 	  	name: "Costco", 
 	  	cost: "391.00", 
 	  	n_types: "3", 
@@ -70,7 +70,7 @@ angular.module('OrderService',[]).factory('OrderService', function() {
 	  	},
 	  {	
 	  	id: "3", 
-	  	show: "true",
+	  	show: true,
 	  	name: "Staples", 
 	  	cost: "16920.13", 
 	  	n_types: "1", 
@@ -95,7 +95,7 @@ angular.module('OrderService',[]).factory('OrderService', function() {
 	  	},
 	  {	
 	  	id: "4", 
-	  	show: "true",
+	  	show: true,
 	  	name: "Materials Co.", 
 	  	cost: "135,100.00", 
 	  	n_types: "1", 
@@ -120,7 +120,7 @@ angular.module('OrderService',[]).factory('OrderService', function() {
 	  	},
 	  {	
 	  	id: "5", 
-	  	show: "true",
+	  	show: true,
 	  	name: "Office Depot", 
 	  	cost: "2887.22", 
 	  	n_types: "2", 
@@ -158,7 +158,7 @@ angular.module('OrderService',[]).factory('OrderService', function() {
 	  	},
 	  {	
 	  	id: "6", 
-	  	show: "true",
+	  	show: true,
 	  	name: "Honeywell", 
 	  	cost: "8839.36", 
 	  	n_types: "3", 

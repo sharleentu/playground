@@ -45,7 +45,7 @@
       </div>
     </div>
 
-  <div class="container-custom">
+    <div class="container-custom">
       <div ui-view>
         <i>Some content will load here!</i>
       </div>
@@ -54,12 +54,7 @@
       <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
     </div> -->
 
-    <div class="footer">
-      <div class="container-custom">
-        <p><span class="glyphicon glyphicon-check"></span> Capriza Playground </p>
-      </div>
-    </div>
-
+    
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -85,6 +80,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-modal-service/dst/angular-modal-service.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -94,6 +90,7 @@
         <script src="scripts/controllers/PurchaseCtrl.js"></script>
         <script src="scripts/controllers/OrderService.js"></script>
         <script src="scripts/controllers/DetailCtrl.js"></script>
+        <script src="scripts/controllers/ConfirmationCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

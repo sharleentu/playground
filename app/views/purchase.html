@@ -7,19 +7,64 @@
 			<td> Representative Name </td>
 			<td></td>
 			<td></td>
+			<td> Status </td>
 		</thead>
 		<tbody>
-			<tr ng-repeat="order in orders | filter : { show: 'true'}"> 
+			<tr ng-repeat="order in orders | filter : {show: 'true'}"> 
 				<td> <a ui-sref='detail({id: order.id})'>{{ order.name }} </a></td>
 				<td> {{ order.n_types }} </td>
 				<td> {{ order.cost }} </td>
 				<td> {{ order.repname }} </td>
 				<td>
-					 <a class="btn btn-success btn-xs">Approve</a> 
+					 <a class="btn btn-success btn-xs" href ng-click="show({{order}})">Approve</a> 
+
+
+					 <script type='text/ng-template' id='modal_approve.html'>
+				 <div class="modal fade">
+		          <div class="modal-dialog">
+		            <div class="modal-content">
+		              <div class="modal-header">
+		                <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                <h4 class="modal-title">Approve Order for {{order.repname}} </h4>
+		              </div>
+		              <div class="modal-body">
+		                <p>Its your call...</p>
+		              </div>
+		              <div class="modal-footer">
+		                <button type="button" ng-click="close(order.show)" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		                <button type="button" ng-click="order.show=false; close(order.show)" class="btn btn-primary" data-dismiss="modal">Approve</button>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		     </script>		
+
 				</td>
 				<td>
-					 <a class="btn btn-warning btn-xs">Reject</a>
-				</td>				
+					 <a class="btn btn-warning btn-xs" href ng-click='show_reject( {{order}})'>Reject</a>
+				</td>	
+				<td><a class='btn'>{{order.show}}</a></td>
+
+				
+		     <script type='text/ng-template' id='modal_reject.html'>
+				 <div class="modal fade">
+		          <div class="modal-dialog">
+		            <div class="modal-content">
+		              <div class="modal-header">
+		                <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                <h4 class="modal-title">Reject Order for {{order.repname}}</h4>
+		              </div>
+		              <div class="modal-body">
+		                <p>Its your call...</p>
+		              </div>
+		              <div class="modal-footer">
+		                <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		                <button type="button" ng-click="close('Yes')" class="btn btn-warning" data-dismiss="modal">Reject</button>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		     </script>		
 			</tr>
 		</tbody>
 	</table>	
