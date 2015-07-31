@@ -7,7 +7,6 @@
 			<td> Representative Name </td>
 			<td></td>
 			<td></td>
-			<td> Status </td>
 		</thead>
 		<tbody>
 			<tr ng-repeat="order in orders | filter : {show: 'true'}"> 
@@ -28,7 +27,8 @@
 		                <h4 class="modal-title">Approve Order for {{order.repname}} </h4>
 		              </div>
 		              <div class="modal-body">
-		                <p>Its your call...</p>
+		                <p> {{ order.name}} </p>
+		                <p> {{ order.cost}} </p>
 		              </div>
 		              <div class="modal-footer">
 		                <button type="button" ng-click="close(order.show)" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -43,7 +43,6 @@
 				<td>
 					 <a class="btn btn-warning btn-xs" href ng-click='show_reject( {{order}})'>Reject</a>
 				</td>	
-				<td><a class='btn'>{{order.show}}</a></td>
 
 				
 		     <script type='text/ng-template' id='modal_reject.html'>
@@ -55,7 +54,8 @@
 		                <h4 class="modal-title">Reject Order for {{order.repname}}</h4>
 		              </div>
 		              <div class="modal-body">
-		                <p>Its your call...</p>
+		                <p> {{ order.name}} </p>
+		                <p> {{ order.cost}} </p>
 		              </div>
 		              <div class="modal-footer">
 		                <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">Cancel</button>

@@ -1,31 +1,26 @@
-<div class='topic'>
+<div class='topic-delivery'>
   <h3> Delivery Details </h3>
-  <div class="form-group">
-    <label for="order">Delivery Number</label>
-    <input type="text" class="form-control" id="order" placeholder="1000000294667 "ng-model="formData.order">
-  </div>
- 
+
    <div class="form-group">
-    <label for="exampleInputEmail1">Today's Date</label>
-    <input type="date" class="form-control" id="exampleInputEmail1" ng-model="formData.date">
+    <label for="date">Today's Date</label>
+    <input type="date" class="form-control" id="date" ng-model="formData.date">
   </div>
 
    <div class="form-group">
-    <label for="exampleInputEmail1">Time of Delivery</label>
-    <input type="time" class="form-control" id="exampleInputEmail1" ng-model="formData.time">
+    <label for="time">Time of Delivery</label>
+    <input type="time" class="form-control" id="time" ng-model="formData.time">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Recipient's Name </label>
-    <input type="text" class="form-control" id="exampleInputPassword1" ng-model="formData.receipient">
+    <label for="recipient">Recipient's Name </label>
+    <input type="text" class="form-control" id="recipient" ng-model="formData.receipient">
   </div>
-   <div class="form-group">
-    <label for="exampleInputEmail1">Delivery Address</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="400 Hamilton Ave, Palo Alto" ng-model="formData.addr">
+  <div class="form-group">
+    <label for="addr">Delivery Address</label>
+    <input type="text" class="form-control" id="addr" placeholder="400 Hamilton Ave, Palo Alto CA 94309" ng-model="formData.addr">
   </div>
 
-  <label>
-Type of Delivery</label> <br>
- <label>  
+  <label>Type of Delivery</label> <br>
+  <label>  
     <input type="checkbox" ng-model="formData.value1"> Residential
   </label><br/>
   <label>
@@ -35,18 +30,16 @@ Type of Delivery</label> <br>
     <input type="checkbox" ng-model="formData.value3"> Other
   </label><br/>
 
-    <label for="form-control">Delivery Status</label>
+  <label for="form-control">Delivery Status</label>
   <select class="form-control" ng-model="formData.status">
     <option>Delivered</option>
     <option>Not Delivered</option>
   </select>
-
- 
-</div>
-
-
-<a type="button" class="btn btn-primary" ui-sref="delivery.1"> Back </a>
-<a type="button" class="btn btn-primary" ui-sref="delivery.3"> Next </a>
-
-    
+  <div class='pull-right'>
+  <a type="button" class="btn btn-primary" ui-sref="delivery.1"> Back </a>
+  </div>
+  <div class='pull-left'>
+  <a type="button" class="btn btn-primary" ui-sref="delivery.3"> Next </a>
+  </div>
+</div>  
 

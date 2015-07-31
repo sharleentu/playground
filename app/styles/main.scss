@@ -10,6 +10,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
+
 body {
   padding: 0;
 }
@@ -73,6 +74,25 @@ body {
   margin-right:auto;
 }
 
+
+
+.nav-delivery{
+  margin-bottom: 0px;
+}
+
+.nav-tab{
+  width: 650px;  
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+  li {
+    float: left;
+    display: block;
+  }
+}
+
 .topic{
   background-color: #ecf0f1;
   width: 100%;
@@ -85,6 +105,17 @@ body {
   .topic-name{
     margin-bottom: 25px;
   }
+}
+
+.topic-delivery{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 25px;
+  padding: 10px 25px 25px 25px;
+  border-left: 1px solid #ecf0f1;
+  border-right: 1px solid #ecf0f1;
+  border-bottom: 1px solid #ecf0f1;
 }
 
 .btn-home{

@@ -1,5 +1,5 @@
 
-<div class='topic'>
+<div class='topic-delivery'>
   <h3> Contractor Details </h3>
   <label for="firstname">First Name</label>
   <input type="text" class="form-control" id='firstname' placeholder="Bob" ng-model="formData.first_name"><br>
@@ -8,7 +8,11 @@
   <label for="id">Contractor ID</label>
   <input type="text" class="form-control" id="id" placeholder="ex: STAN-102356" ng-model="formData.id"><br>
   <label for="email">Email</label>
-  <input type="email" class="form-control" id="email" placeholder="bob@company.com" ng-model="formData.email"><br>
+  <input type="email" class="form-control" id="email" placeholder="bob@company.com" ng-model="formData.email" >
+  <br>
+  <div class='pull-right'>
+  <a type="button " class="btn btn-primary" ui-sref="delivery.2"> Next </a>
+  </div>
 </div>
 
-<a type="button" class="btn btn-primary" ui-sref="delivery.2"> Next </a>
+

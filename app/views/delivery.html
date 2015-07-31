@@ -1,18 +1,16 @@
 <form ng-submit="processForm()">
   <h1> Delivery Tracking </h1>
 
-<nav>
-  <ul class="pagination">
-    <li><a ui-sref=".1"> Contractor Details </a></li>
-    <li><a ui-sref=".2"> Recipient Details </a></li>
-    <li><a ui-sref=".3"> Delivery Details </a></li>
-    <li><a ui-sref=".4"> Delivery Form Upload </a></li>
-    <li><a ui-sref='.confirmation'>Confirmation Page</a></li>
-  </ul>
-</nav>
+	<ul class="nav nav-tabs">
+	  	<li ui-sref-active="active"><a ui-sref=".1" > 1. Contractor Details </a></li>
+	    <li ui-sref-active="active"><a ui-sref=".2"> 2. Recipient Details </a></li>
+	    <li ui-sref-active="active"><a ui-sref=".3"> 3. Delivery Details </a></li>
+	    <li ui-sref-active="active"><a ui-sref=".4"> 4. Delivery Form Upload </a></li>
+	    <li ui-sref-active="active"><a ui-sref='.confirmation'>5. Confirmation Page</a></li>
+	</ul>
 
-
-  <div id="form-views" ui-view></div>
-
+  <div id="form-views" ui-view>
+  	  <div ng-include="'views/delivery-1.html'"></div>
+  </div>
 </form>
 

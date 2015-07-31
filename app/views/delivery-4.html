@@ -1,11 +1,11 @@
 
 
 
-<div class='topic'>
-	<h3> Your form has been submitted. Thank you </h3>
-	<p> <strong> Employee: </strong>{{formData.first_name}} {{formData.last_name}}</p>
-	<p> <strong>Employee ID: </strong>{{formData.id}}</p>
-	<p> <strong>Employee email: </strong>{{formData.email}}</p><br>
+<div class='topic-delivery '>
+	<h3 class='text-center'> Your form has been submitted. </h3>
+	<p> <strong>Contractor: </strong>{{formData.first_name}} {{formData.last_name}}</p>
+	<p> <strong>Contractor ID: </strong>{{formData.id}}</p>
+	<p> <strong>Contractor email: </strong>{{formData.email}}</p><br>
 	<p> <strong>Package order number: </strong>{{formData.order}}</p>
 	<p> <strong>Sent to: </strong> {{formData.recipient}}</p>
 	<p> {{formData.time}} {{formData.date}} </p>
@@ -14,27 +14,28 @@
 	<p> <strong>Number of Packages: </strong>{{formData.n_items}}</p>
 	<p> <strong>Package desc: </strong>{{formData.desc}}</p>
 	<p> <strong>Additional notes: </strong>{{formData.notes}}</p>
+
+
+	<a type="button" class="btn btn-primary" ui-sref="/"> Back to Home </a>
+
 </div>
 
-<a type="button" class="btn btn-primary" ui-sref="/"> Back to Home </a>
 
 
 
 <script> 
-      function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-                $('#blah').attr('src', e.target.result)
-            }
-
-            reader.readAsDataURL(input.files[0]);
-        }
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+			reader.onload = function (e) {
+        $('#blah').attr('src', e.target.result)
+      }
+        reader.readAsDataURL(input.files[0]);
     }
+	}
 
-    $("#file").change(function(){
-        readURL(this);
-    });
- </script>
+	$("#file").change(function(){
+    readURL(this);
+	});
+</script>
 
