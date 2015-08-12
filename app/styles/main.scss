@@ -136,6 +136,42 @@ body {
   text-align: left;
 }
 
+.flex-row{
+  flex-direction: row;
+  margin: 20px 0 20px 0
+}
+
+.form-filter{
+width: 50%;
+display: inline;
+}
+
+.btn-action{
+  float:right;
+}
+
+.btn-group{
+  float:right;
+}
+
+.opp-row-new{
+  background-color: gray;
+}
+
+.form-label{
+line-height: 30px;
+}
+
+.form-input{
+  margin: 5px 0 5px 0;
+}
+
+.container-top{
+  margin-top:40px;
+}
+#new-opp{
+  margin: 40px 0 0 0;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

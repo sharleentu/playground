@@ -1,25 +1,31 @@
-
-<select class="form-control" ng-init="cc={tag: ''}" ng-model="cc.tag">
-	<option value="recent">My Recently Viewed Leads</option>
-	<option value="no">My Unread Leads</option>
-	<option value="maybe">Today's Leads</option>
-</select>
-
+<div class='flex-row'>
+	<label> View: </label>
+	<select class="form-control form-filter" ng-init="cc={tag: ''}" ng-model="cc.tag">
+		<option value="recent">My Recently Viewed Leads</option>
+		<option value="unread">My Unread Leads</option>
+		<option value="today">Today's Leads</option>
+	</select>
+	<a type="button" class="btn btn-primary btn-action" ui-sref='sales.lead.new'>New Lead</a>
+</div>
 
 <table class='table table-bordered table-hover'> 
 	<thead id='table-header'>
-		<td> Lead Name </td>
-		<td> Company </td>
-		<td> Phone </td>
+		<td><strong>Lead Name</strong></td>
+		<td><strong>Company</strong></td>
+		<td><strong>Phone</strong></td>
 	</thead>
 	<tbody>
-		<tr ng-repeat="lead in leads  | filter : cc"> 
-			<td> <a ui-sref= 'sales.lead.detail({id: lead.id})'>{{ lead.owner }} </a></td>
-			<td> {{ lead.company }} </td>
-			<td> {{ lead.phone }} </td>
+		<tr ng-repeat="lead in leads | filter : cc"> 
+			<td><a ui-sref= 'sales.leads.detail({id: lead.id})'>{{ lead.owner }}</a></td>
+			<td>{{ lead.company }}</td>
+			<td>{{ lead.phone }}</td>
 		</tr>
 	</tbody>
 </table>	
 
 
-<a type="button" class="btn btn-primary" ui-sref='sales.lead.new'> New Lead </a>
+
+
+
+
+

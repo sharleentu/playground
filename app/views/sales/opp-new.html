@@ -1,55 +1,90 @@
-<div class='row'>
-  <div class='pair-label col-xs-6 col-sm-3'>
-    <div><strong><label for='owner'>Opportunity Owner :</label></strong></div>
-    <div><strong><label for='name'>Opportunity Name :</label></strong></div>
-    <div><strong><label for='acct'>Account Name :</label></strong></div>
-    <div><strong><label for='type'>Type :</label></strong></div>
-    <div><strong><label for='phone'>Account Phone :</label></strong></div>
-    <div><strong><label for='addr'>Account Address :</label></strong></div>
+<div id='new-opp'>
+  <div class='flex-row'>
+    <h1> Opportunity Edit </h1>
+    <div class='btn-group'>
+      <a type="button" class="btn btn-primary" ng-click="add(newOpp)" ui-sref='sales.opp.table'>Save</a>
+      <a type="button" class="btn btn-primary" ng-click="add(newOpp)" ui-sref='sales.opp.new'> Save and New </a>
+      <a type="button" class="btn btn-primary" ui-sref='sales.opp.table'> Cancel </a>
+    </div>
   </div>
 
-  <div class='pair-name col-xs-6 col-sm-3'>
-    <div><input type='text' id='owner' ng-model="newOpp.owner"></div>
-    <div><input type='text' id='name' ng-model="newOpp.name"></div>
-    <div><input type='text' id='acct' ng-model="newOpp.account"></div>
-    <div><input type='text' id='type' ng-model="newOpp.type"></div>
-    <div><input type='text' id='phone' ng-model="newOpp.phone"></div>
-    <div><input type='text' id='addr' ng-model="newOpp.addr"></div>
-  </div>
+	<h3> Opportunity Information </h3>
 
-  <div class='pair-label col-xs-6 col-sm-3'>
-    <div><strong><label for='date'>Close Date :</label></strong></div>
-    <div><strong><label for='state'>State :</label></strong></div>
-    <div><strong><label for='prob'>Probability :</label></strong></div>
-    <div><strong><label for='amount'>Amount :</label></strong></div>
-  </div>
+	<div class='row topic'>
+	  <div class='pair-label col-xs-6 col-sm-3'>
+	    <div><strong><label class='form-label' for='owner'>Opportunity Owner :</label></strong></div>
+	    <div><strong><label class='form-label' for='name'>Opportunity Name :</label></strong></div>
+	    <div><strong><label class='form-label' for='acct'>Account Name :</label></strong></div>
+	    <div><strong><label class='form-label' for='type'>Type :</label></strong></div>
+	    <div><strong><label class='form-label' for='phone'>Account Phone :</label></strong></div>
+	    <div><strong><label class='form-label' for='addr'>Account Address :</label></strong></div>
+	  </div>
 
-  <div class='pair-name col-xs-6 col-sm-3'>
-     <div><input type='text' id='date' ng-model="newOpp.close_date"></div>
-    <div><input type='text' id='state' ng-model="newOpp.stage"></div>
-    <div><input type='text' id='prob' ng-model="newOpp.prob"></div>
-    <div><input type='text' id='amount' ng-model="newOpp.amount"></div>
-  </div>
+	  <div class='pair-name col-xs-6 col-sm-3'>
+	    <div><input class='form-input' type='text' id='owner' ng-model="newOpp.owner"></div>
+	    <div><input class='form-input' type='text' id='name' ng-model="newOpp.name"></div>
+	    <div><input class='form-input' type='text' id='acct' ng-model="newOpp.account"></div>
+	    <div>
+	    	<select class="form-control form-input" ng-model="newOpp.type">
+	  			<option>New Business</option>
+	  			<option>Existing Business</option>
+				</select>
+			</div>
+	    <div><input class='form-input' type='text' id='phone' ng-model="newOpp.phone"></div>
+	    <div><input class='form-input' type='text' id='addr' ng-model="newOpp.addr"></div>
+	  </div>
 
+	  <div class='pair-label col-xs-6 col-sm-3'>
+	    <div><strong><label class='form-label' for='date'>Close Date :</label></strong></div>
+	    <div><strong><label class='form-label' for='stage'>Stage :</label></strong></div>
+	    <div><strong><label class='form-label' for='prob'>Probability :</label></strong></div>
+	    <div><strong><label class='form-label' for='amount'>Amount :</label></strong></div>
+	  </div>
+
+	  <div class='pair-name col-xs-6 col-sm-3'>
+	    <div><input class='form-input' type='date' id='date' ng-model="newOpp.close_date"></div>
+	    <div>
+	        <select class="form-control form-input" ng-model="newOpp.stage">
+	          <option>Prospecting</option>
+	          <option>Qualification</option>
+	          <option>Needs Analysis</option>
+	          <option>Value Proposition</option>
+	          <option>Id. Decision Makers</option>
+	          <option>Perception Analysis</option>
+	          <option>Proposal/Price Quote</option>
+	          <option>Negotiation/Review</option>
+	          <option>Closed Won</option>
+	          <option>Closed Lost</option>
+	        </select>
+	    </div>
+	    <div><input class='form-input' type='text' id='prob' ng-model="newOpp.prob"></div>
+	    <div><input class='form-input' type='text' id='amount' ng-model="newOpp.amount"></div>
+	  </div>
+	</div>
+
+	<h3> Additional Information </h3>
+	<div class='row topic'>
+	  <div class='pair-label col-xs-6 col-sm-3'>
+	    <div><strong><label class='form-label' for='src'>Lead Source :</label></strong></div> 
+	    <div><strong><label class='form-label' for='step'>Next Step :</label></strong></div> 
+	  </div>
+
+	  <div class='pair-name col-xs-6 col-sm-3'>
+	    <div><input class='form-input' type='text' id='src' ng-model="newOpp.lead_src"></div>
+	    <div><input class='form-input' type='text' id='step' ng-model="newOpp.next_step"></div>
+	  </div>
+	</div>
+
+	<h3> Description Information </h3>
+	<div class='row topic'>
+		<div class='pair-label col-xs-6 col-sm-3'>
+	  	<div><strong>
+	  		<label class='form-label' for='desc'>Description :</label></strong>
+	  	</div>
+	  </div>
+	  <div class='pair-name'>
+	    <div><input class='form-input' type='text' id='desc' ng-model="newOpp.desc"></div>
+	  </div>
+	</div>
 </div>
-
-<h1> Additional Information </h1>
-
-<div class='row'>
-  <div class='pair-label col-xs-6 col-sm-3'>
-    <div><strong><label for='src'>Lead Source :</label></strong></div> 
-    <div><strong><label for='step'>Next Step :</label></strong></div> 
-    <div><strong><label for='desc'>Description :</label></strong></div> 
-  </div>
-
-  <div class='pair-name'>
-    <div><input type='text' id='src' ng-model="newOpp.lead_src"></div>
-    <div><input type='text' id='step' ng-model="newOpp.next_step"></div>
-    <div><input type='text' id='desc' ng-model="newOpp.desc"></div>
-  </div>
-</div>
-
-{{newOpp}}
-
-<a type="button" class="btn btn-primary" ng-click="add(newOpp)" ui-sref='sales.opp.table'> Submit </a>
 

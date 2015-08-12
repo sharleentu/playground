@@ -109,13 +109,14 @@ angular
   .state('sales.leads', {
     url: '/leads',
     templateUrl: 'views/sales/leads.html',
+    controller: 'LeadCtrl'
   })
   .state('sales.leads.table',{
     url: '/',
     templateUrl: 'views/sales/lead-table.html',
     controller: 'LeadCtrl'
   })
-  .state('sales.lead.detail',{
+  .state('sales.leads.detail',{
     url: '/:id',
     templateUrl: 'views/sales/lead-detail.html',
     controller: 'LeadCtrl'

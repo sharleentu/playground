@@ -57,7 +57,7 @@ angular.module('OppService',[]).factory('OppService', function() {
 	  	desc: "Great meeting, we were able to move the close date up sooner than expected",
 	  	created_by: "Capriza, 6/22/2015 5:12 PM",
 	  	last_edited: "Capriza, 7/05/15, 9:12 AM", 
-	  	tag: "recent"
+	  	tag: "active"
 	  },
 	  {	
 	  	id: "4",
@@ -76,7 +76,7 @@ angular.module('OppService',[]).factory('OppService', function() {
 	  	desc: "",
 	  	created_by: "Sara Jane, 6/22/2015 5:12 PM",
 	  	last_edited: "Sara Jane, 7/05/15, 9:12 AM", 
-	  	tag: "recent"
+	  	tag: "active"
 	  },
 	  {	
 	  	id: "5",
@@ -114,7 +114,7 @@ angular.module('OppService',[]).factory('OppService', function() {
 	  	desc: "",
 	  	created_by: "Sara Jane, 6/22/2015 5:12 PM",
 	  	last_edited: "Sara Jane, 7/05/15, 9:12 AM", 
-	  	tag: "recent"
+	  	tag: "mine"
 	  }
 	];
 

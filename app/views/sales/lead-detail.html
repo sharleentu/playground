@@ -1,44 +1,44 @@
 <h1> Lead detail </h1>
 
-<a type="button" class="btn btn-primary" ui-sref='sales.lead.table'> Back </a>
+<a type="button" class="btn btn-primary" ui-sref='sales.leads.table'> Back to Leads </a>
 
+<div class='row topic'>
+	<div class='pair-label col-xs-6 col-sm-3'>
+		<div><strong>Lead Owner :</strong></div>
+		<div><strong>Name :</strong></div>
+		<div><strong>Title:</strong></div>
+		<div><strong>Company :</strong></div>
+		<div><strong>Last Engagement :</strong></div>
+	</div>
 
-<div class='row'>
-<div class='pair-label col-xs-6 col-sm-3'>
-	<div><strong>Lead Owner :</strong></div>
-	<div><strong>Name :</strong></div>
-	<div><strong>Title:</strong></div>
-	<div><strong>Company :</strong></div>
-	<div><strong>Last Engagement :</strong></div>
-</div>
+	<div class='pair-name col-xs-6 col-sm-3'>
+		<div>{{lead.owner}}</div>
+		<div>{{lead.name}}</div>
+		<div>{{lead.title}}</div>
+		<div>{{lead.company}}</div>
+		<div>{{lead.engagement}}</div>
+	</div>
 
-<div class='pair-name col-xs-6 col-sm-3'>
-	<div>{{lead.owner}}</div>
-	<div>{{lead.name}}</div>
-	<div>{{lead.title}}</div>
-	<div>{{lead.company}}</div>
-	<div>{{lead.engagement}}</div>
-</div>
+	<div class='pair-label col-xs-6 col-sm-3'>
+		<div><strong>Phone:</strong></div>
+		<div><strong>Email :</strong></div>
+		<div><strong>Lead Status :</strong></div>
+		<div><strong>Rating :</strong></div>
+	</div>
 
-<div class='pair-label col-xs-6 col-sm-3'>
-	<div><strong>Phone:</strong></div>
-	<div><strong>Email :</strong></div>
-	<div><strong>Lead Status :</strong></div>
-	<div><strong>Rating :</strong></div>
-</div>
-
-<div class='pair-name col-xs-6 col-sm-3'>
-	<div>{{lead.phone}}</div>
-	<div>{{lead.email}}</div>
-	<div>{{lead.status}}</div>
-	<div>{{lead.rating}}</div>
-</div>
-
+	<div class='pair-name col-xs-6 col-sm-3'>
+		<div>{{lead.phone}}</div>
+		<div>{{lead.email}}</div>
+		<div>{{lead.status}}</div>
+		<div>{{lead.rating}}</div>
+	</div>
 </div>
 
 <h1> Product Interest </h1>
+
 <h1> Additional Information </h1>
-<div class='row'>
+
+<div class='row topic'>
 	<div class='pair-label col-xs-6 col-sm-3'>
 		<div><strong>Address :</strong></div> 
 	</div>
@@ -53,15 +53,14 @@
 	</div>
 
 	<div class='pair-name'>
-	<div>{{website}}</div> 
-
+		<div>{{website}}</div> 
 	</div>
 </div>
 
 
 <h1> Address Information </h1>
 
-<div class='row'>
+<div class='row topic'>
 <div class='pair-label col-xs-6 col-sm-3'>
 	<div><strong> Created By :</strong></div>
 </div>

@@ -1,77 +1,78 @@
-<h1> Opportunity detail </h1>
+<div class='container-top'>
+	<a type="button" class="btn btn-primary" ui-sref='sales.opp.table'> Back to Opportunities</a>
 
-<a type="button" class="btn btn-primary" ui-sref='sales.opp.table'> Back </a>
+	<h3> Opportunity detail </h3>
 
+	<div class='row topic'>
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'>Opportunity Owner :</strong></div>
+			<div><strong class='form-label'>Opportunity Name :</strong></div>
+			<div><strong class='form-label'>Account Name :</strong></div>
+			<div><strong class='form-label'>Type :</strong></div>
+			<div><strong class='form-label'>Account Phone :</strong></div>
+			<div><strong class='form-label'>Account Address :</strong></div>
+		</div>
+		<div class='pair-name col-xs-6 col-sm-3'>
+			<div class='form-label'>{{opp.owner}}</div>
+			<div class='form-label'>{{opp.name}}</div>
+			<div class='form-label'>{{opp.account}}</div>
+			<div class='form-label'>{{opp.type}}</div>
+			<div class='form-label'>{{opp.phone}}</div>
+			<div class='form-label'>{{opp.addr}}</div>
+		</div>
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'>Close Date :</strong></div>
+			<div><strong class='form-label'>State :</strong></div>
+			<div><strong class='form-label'>Probability :</strong></div>
+			<div><strong class='form-label'>Amount :</strong></div>
+		</div>
+		<div class='pair-name col-xs-6 col-sm-3'>
+			<div class='form-label'>{{opp.close_date}}</div>
+			<div class='form-label'>{{opp.stage}}</div>
+			<div class='form-label'>{{opp.prob}}</div>
+			<div class='form-label'>{{opp.amount}}</div>
+		</div>
+	</div>
 
-<div class='row'>
-<div class='pair-label col-xs-6 col-sm-3'>
-	<div><strong>Opportunity Owner :</strong></div>
-	<div><strong>Opportunity Name :</strong></div>
-	<div><strong>Account Name :</strong></div>
-	<div><strong>Type :</strong></div>
-	<div><strong>Account Phone :</strong></div>
-	<div><strong>Account Address :</strong></div>
-</div>
+	<h3> Additional Information </h3>
+	<div class='row topic'>
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'>Lead Source :</strong></div> 
+			<div><strong class='form-label'>Next Step :</strong></div> 
+		</div>
+		<div class='pair-name'>
+			<div class='form-label'>{{opp.lead_src}}</div> 
+			<div class='form-label'>{{opp.next_step}}</div> 
+		</div>
+	</div>
 
-<div class='pair-name col-xs-6 col-sm-3'>
-	<div>{{opp.owner}}</div>
-	<div>{{opp.name}}</div>
-	<div>{{opp.account}}</div>
-	<div>{{opp.type}}</div>
-	<div>{{opp.phone}}</div>
-	<div>{{opp.addr}}</div>
-</div>
+	<h3> Description Information </h3>
+	<div class='row topic'>
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'>Description :</strong></div> 
+		</div>
+		<div class='pair-name'>
+			<div class='form-label'>{{opp.desc}}</div> 
+		</div>
+	</div>
 
-<div class='pair-label col-xs-6 col-sm-3'>
-	<div><strong>Close Date :</strong></div>
-	<div><strong>State :</strong></div>
-	<div><strong>Probability :</strong></div>
-	<div><strong>Amount :</strong></div>
-</div>
+	<h3> System Information </h3>
 
-<div class='pair-name col-xs-6 col-sm-3'>
-	<div>{{opp.close_date}}</div>
-	<div>{{opp.stage}}</div>
-	<div>{{opp.prob}}</div>
-	<div>{{opp.amount}}</div>
-</div>
+	<div class='row topic'>
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'> Created By :</strong></div>
+		</div>
 
-</div>
+		<div class='pair-name col-xs-6 col-sm-3'>
+			<div class='form-label'>{{opp.created_by}}</div>
+		</div>
 
-<h1> Additional Information </h1>
-<div class='row'>
-<div class='pair-label col-xs-6 col-sm-3'>
-<div><strong>Lead Source :</strong></div> 
-<div><strong>Next Step :</strong></div> 
-<div><strong>Description :</strong></div> 
-</div>
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'>Last Edited By :</strong></div>
+		</div>
 
-<div class='pair-name'>
-<div>{{lead_src}}</div> 
-<div>{{next_step}}</div> 
-<div>{{desc}}</div> 
-
-</div>
-</div>
-
-
-<h1> System Information </h1>
-
-<div class='row'>
-<div class='pair-label col-xs-6 col-sm-3'>
-	<div><strong> Created By :</strong></div>
-</div>
-
-<div class='pair-name col-xs-6 col-sm-3'>
-	<div>{{opp.created_by}}</div>
-</div>
-
-<div class='pair-label col-xs-6 col-sm-3'>
-	<div><strong>Last Edited By :</strong></div>
-</div>
-
-<div class='pair-name col-xs-6 col-sm-3'>
-	<div>{{opp.last_edited}}</div>
-</div>
-
+		<div class='pair-name col-xs-6 col-sm-3'>
+			<div class='form-label'>{{opp.last_edited}}</div>
+		</div>
+	</div>
 </div>

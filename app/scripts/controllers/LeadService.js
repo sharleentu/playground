@@ -26,7 +26,7 @@ angular.module('LeadService',[]).factory('LeadService', function() {
 	  }, 
 	  {	
 	  	id: "2",
-	  	owner: "John Smith",
+	  	owner: "Jesse Williams",
 	  	name: "Acme-123",
 	  	title: "Designer",
 	  	company: "Capriza",
@@ -48,10 +48,10 @@ angular.module('LeadService',[]).factory('LeadService', function() {
 	  }, 
 	  {	
 	  	id: "3",
-	  	owner: "John Smith",
-	  	name: "Acme-123",
-	  	title: "Designer",
-	  	company: "Capriza",
+	  	owner: "Charlie Wright",
+	  	name: "- ",
+	  	title: "SVP Engineering",
+	  	company: "Universal Studios",
 	  	engage: "",
 	  	phone: "650-112-3456",
 	  	email: "john@capriza.com",
