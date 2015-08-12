@@ -127,6 +127,16 @@ body {
   }
 }
 
+
+.pair-label{
+  text-align: right;
+}
+
+.pair-name{
+  text-align: left;
+}
+
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {

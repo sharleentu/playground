@@ -1,0 +1,77 @@
+<h1> Opportunity detail </h1>
+
+<a type="button" class="btn btn-primary" ui-sref='sales.opp.table'> Back </a>
+
+
+<div class='row'>
+<div class='pair-label col-xs-6 col-sm-3'>
+	<div><strong>Opportunity Owner :</strong></div>
+	<div><strong>Opportunity Name :</strong></div>
+	<div><strong>Account Name :</strong></div>
+	<div><strong>Type :</strong></div>
+	<div><strong>Account Phone :</strong></div>
+	<div><strong>Account Address :</strong></div>
+</div>
+
+<div class='pair-name col-xs-6 col-sm-3'>
+	<div>{{opp.owner}}</div>
+	<div>{{opp.name}}</div>
+	<div>{{opp.account}}</div>
+	<div>{{opp.type}}</div>
+	<div>{{opp.phone}}</div>
+	<div>{{opp.addr}}</div>
+</div>
+
+<div class='pair-label col-xs-6 col-sm-3'>
+	<div><strong>Close Date :</strong></div>
+	<div><strong>State :</strong></div>
+	<div><strong>Probability :</strong></div>
+	<div><strong>Amount :</strong></div>
+</div>
+
+<div class='pair-name col-xs-6 col-sm-3'>
+	<div>{{opp.close_date}}</div>
+	<div>{{opp.stage}}</div>
+	<div>{{opp.prob}}</div>
+	<div>{{opp.amount}}</div>
+</div>
+
+</div>
+
+<h1> Additional Information </h1>
+<div class='row'>
+<div class='pair-label col-xs-6 col-sm-3'>
+<div><strong>Lead Source :</strong></div> 
+<div><strong>Next Step :</strong></div> 
+<div><strong>Description :</strong></div> 
+</div>
+
+<div class='pair-name'>
+<div>{{lead_src}}</div> 
+<div>{{next_step}}</div> 
+<div>{{desc}}</div> 
+
+</div>
+</div>
+
+
+<h1> System Information </h1>
+
+<div class='row'>
+<div class='pair-label col-xs-6 col-sm-3'>
+	<div><strong> Created By :</strong></div>
+</div>
+
+<div class='pair-name col-xs-6 col-sm-3'>
+	<div>{{opp.created_by}}</div>
+</div>
+
+<div class='pair-label col-xs-6 col-sm-3'>
+	<div><strong>Last Edited By :</strong></div>
+</div>
+
+<div class='pair-name col-xs-6 col-sm-3'>
+	<div>{{opp.last_edited}}</div>
+</div>
+
+</div>

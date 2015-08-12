@@ -1,0 +1,25 @@
+
+<select class="form-control" ng-init="cc={tag: ''}" ng-model="cc.tag">
+	<option value="recent">recently viewed</option>
+	<option value="no">active opportunities</option>
+	<option value="maybe">my opportunities</option>
+</select>
+
+
+<table class='table table-bordered table-hover'> 
+	<thead id='table-header'>
+		<td> Opportunity Name </td>
+		<td> Account Name </td>
+		<td> Close Date </td>
+	</thead>
+	<tbody>
+		<tr ng-repeat="opp in opps  | filter : cc"> 
+			<td> <a ui-sref= 'sales.opp.detail({id: opp.id})'>{{ opp.name }} </a></td>
+			<td> {{ opp.account }} </td>
+			<td> {{ opp.close_date }} </td>
+		</tr>
+	</tbody>
+</table>	
+
+
+<a type="button" class="btn btn-primary" ui-sref='sales.opp.new'> New Opportunity </a>
