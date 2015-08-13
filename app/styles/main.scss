@@ -109,6 +109,7 @@ body {
 
 .topic-delivery{
   width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 25px;
@@ -144,6 +145,10 @@ body {
 .form-filter{
 width: 50%;
 display: inline;
+}
+
+#form-views{
+  height: 600px;
 }
 
 .btn-action{

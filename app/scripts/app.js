@@ -27,7 +27,10 @@ angular
     'OppService',
     'OppCtrl',
     'LeadCtrl',
-    'LeadService'
+    'LeadService',
+    'PtoCtrl',
+    'PtoService',
+    'ModalCtrl2'
   ])
   .config(['$stateProvider', '$urlRouterProvider', 
   	function($stateProvider, $urlRouterProvider){
@@ -52,6 +55,11 @@ angular
   	url: '/purchase',
   	templateUrl: 'views/purchase/main.html',
   	controller: 'PurchaseCtrl'
+  })
+  .state('pto', {
+    url: '/pto',
+    templateUrl: 'views/pto.html',
+    controller: 'PtoCtrl'
   })
   .state('delivery', {
     url: '/delivery',

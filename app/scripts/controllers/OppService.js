@@ -115,7 +115,46 @@ angular.module('OppService',[]).factory('OppService', function() {
 	  	created_by: "Sara Jane, 6/22/2015 5:12 PM",
 	  	last_edited: "Sara Jane, 7/05/15, 9:12 AM", 
 	  	tag: "mine"
+	  },
+	  {	
+	  	id: "7",
+	  	owner: "Nathaniel Lee",
+	  	name: "Time",
+	  	account: "Time",
+	  	type: "New Customer",
+	  	phone: "801-203-3333",
+	  	addr: "234 Camino Real, San Diego, CA 80216",
+	  	close_date: "8/7/2015", 
+	  	stage: "Closed Won",
+	  	prob: "100%",
+	  	amount: "$230,000.00",
+	  	lead_src: "Trade Show",
+	  	next_step: "",
+	  	desc: "",
+	  	created_by: "Sara Jane, 6/22/2015 5:12 PM",
+	  	last_edited: "Sara Jane, 7/05/15, 9:12 AM", 
+	  	tag: "mine"
+	  },
+	  {	
+	  	id: "8",
+	  	owner: "Jillian Meyers",
+	  	name: "Movement Lifestyle",
+	  	account: "Movement Lifestyle",
+	  	type: "New Customer",
+	  	phone: "801-203-3333",
+	  	addr: "22364 Serra Drive, Los Angeles, CA 80216",
+	  	close_date: "8/7/2015", 
+	  	stage: "Discovery",
+	  	prob: "20%",
+	  	amount: "$2,000.00",
+	  	lead_src: "Marketing Campaign",
+	  	next_step: "Discovery Call",
+	  	desc: "",
+	  	created_by: "Sara Jane, 6/22/2015 5:12 PM",
+	  	last_edited: "Sara Jane, 7/05/15, 9:12 AM", 
+	  	tag: "recent"
 	  }
+
 	];
 
 

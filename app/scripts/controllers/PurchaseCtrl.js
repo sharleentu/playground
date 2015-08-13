@@ -40,14 +40,21 @@ angular.module('angularTestApp.controllers',[])
 }]);
 
 angular.module('ModalCtrl', [])
-	.controller('ModalCtrl', ['$scope', 'close', 'order',
-	function($scope, close, order) {
+	.controller('ModalCtrl', ['$scope', 'close', 'OrderService', 'order',
+	function($scope, close, OrderService, order) {
 
 	$scope.order = order;
 
 	$scope.close = function(result) {
 	 	// $scope.order.show = false;
 	 	order.show = result;
+	 	close(result, 500);
+
+	 	// window.location.reload(); 
+	  };
+
+	  $scope.hide = function(result) {
+	  	OrderService.approve(order.id);
 	 	close(result, 500);
 
 	 	// window.location.reload(); 

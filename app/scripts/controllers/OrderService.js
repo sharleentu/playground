@@ -213,6 +213,10 @@ angular.module('OrderService',[]).factory('OrderService', function() {
     all: function() {
       return orders;
     },
+    hide: function(id) {
+    	orders[id-1].show = false; 
+    	return orders;
+    }
   };
 
 });

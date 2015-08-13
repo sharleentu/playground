@@ -16,7 +16,7 @@
 	</thead>
 	<tbody>
 		<tr ng-repeat="lead in leads | filter : cc"> 
-			<td><a ui-sref= 'sales.leads.detail({id: lead.id})'>{{ lead.owner }}</a></td>
+			<td><a ui-sref= 'sales.leads.detail({id: lead.id})'>{{ lead.name }}</a></td>
 			<td>{{ lead.company }}</td>
 			<td>{{ lead.phone }}</td>
 		</tr>
