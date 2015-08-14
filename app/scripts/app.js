@@ -33,7 +33,9 @@ angular
     'ModalCtrl2',
     'ModalCtrl3',
     'TimesheetCtrl',
-    'TimesheetService'
+    'TimesheetService',
+    'TravelCtrl',
+    'TravelService'
   ])
   .config(['$stateProvider', '$urlRouterProvider', 
   	function($stateProvider, $urlRouterProvider){
@@ -64,6 +66,16 @@ angular
     templateUrl: 'views/timesheets.html',
     controller: 'TimesheetCtrl'
 
+  })
+  .state('travel', {
+    url: '/travel',
+    templateUrl: 'views/travel.html',
+    controller: 'TravelCtrl'
+  })
+  .state('travel-detail', {
+    url: '/travel-detail/:id',
+    templateUrl: 'views/travel-detail.html',
+    controller: 'TravelCtrl'
   })
   .state('pto', {
     url: '/pto',

@@ -1,0 +1,91 @@
+<h3>Travel Expenses Approvals</h3>
+	<table class='table table-bordered table-hover'> 
+		<thead id='table-header'>
+			<td> <strong>Date </strong></td>
+			<td> <strong>Expense Report Name </strong></td>
+			<td> <strong>Employee Name</strong></td>
+			<td> <strong>Total Amount</strong></td>
+			<td> <strong>Status</strong></td>
+			<td></td>
+			<td></td>
+		</thead>
+		<tbody>
+			<tr ng-repeat="request in requests"> 
+				<td> {{ request.curr_date }}</td>
+				<td> <a ui-sref='travel-detail({id: request.id})'>{{ request.expense }} </a></td>
+				<td> {{ request.name }} </td>
+				<td> {{ request.total }} </td>
+				<td> <a class='btn btn-info btn-xs' disabled="disabled"> {{ request.status }} </a> </td>
+				<td>
+					 <a class="btn btn-success btn-xs" href ng-click="show({{request}})">Approve</a> 
+					 <script type='text/ng-template' id='modal_request.html'>
+				 <div class="modal fade">
+		          <div class="modal-dialog">
+		            <div class="modal-content">
+		              <div class="modal-header">
+		                <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                <h4 class="modal-title">Approve PTO for {{request.name}} </h4>
+		              </div>
+		              <div class="modal-body">
+		                 <div class='row'>
+		                	<div class='col-xs-6 col-sm-3 col-md-offset-3'>
+			                <p> <strong>Start Date: </strong></p>
+							<p> <strong>End Date: </strong></p>	
+							<p> <strong>Total Days: </strong></p>
+							</div>	
+							<div class='col-xs-6 col-sm-3 '>
+							<p> {{ request.start_date}} </p>
+							<p> {{ request.end_date }} </p>	
+							<p> {{ request.total }} </p>	
+							</div>
+						</div>
+		              </div>
+		              <div class="modal-footer">
+		                <button type="button" ng-click="close())" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		                <button type="button" ng-click="approve({{order.id}})" class="btn btn-success" data-dismiss="modal">Approve</button>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		     </script>		
+
+				</td>
+				<td>
+					 <a class="btn btn-warning btn-xs" href ng-click='show_reject({{request}})'>Reject</a>
+				</td>	
+
+				
+		     <script type='text/ng-template' id='modal_reject_request.html'>
+				 <div class="modal fade">
+		          <div class="modal-dialog">
+		            <div class="modal-content">
+		              <div class="modal-header">
+		                <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                <h4 class="modal-title">Reject PTO for {{request.name}}</h4>
+		              </div>
+		              <div class="modal-body">
+		                <div class='row'>
+		                	<div class='col-xs-6 col-sm-3 col-md-offset-3'>
+			                <p> <strong>Start Date: </strong></p>
+							<p> <strong>End Date: </strong></p>	
+							<p> <strong>Total Days: </strong></p>
+							</div>	
+							<div class='col-xs-6 col-sm-3 '>
+							<p> {{ request.start_date}} </p>
+							<p> {{ request.end_date }} </p>	
+							<p> {{ request.total }} </p>	
+							</div>
+						</div>
+		              </div>
+		              <div class="modal-footer">
+		                <button type="button" ng-click="close()" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		                <button type="button" ng-click="reject({{request.id}})" class="btn btn-warning" data-dismiss="modal">Reject</button>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		     </script>		
+			</tr>
+		</tbody>
+	</table>	
+</div>
