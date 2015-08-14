@@ -208,6 +208,12 @@ line-height: 30px;
   margin: 40px 0 0 0;
 }
 
+.model-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {

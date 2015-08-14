@@ -1,0 +1,70 @@
+
+  <h2> Order Parts </h2>
+
+  <label>Select Product Type</label>
+  <input type="text" class="form-control" ng-click='show_list(parts)' value='{{selected_part.name}}'><br>
+
+
+  <label for="lastname">Manufacturer</label>
+  <input type="text" disabled="disabled" class="form-control" value='{{selected_part.manu}}'><br>
+
+  <label for="lastname">Select Model</label>
+  <input type="text" class="form-control" ng-click='show_types(selected_part.types)' value='{{selected_model.model}}'><br>
+
+   <label for="lastname">Price</label>
+  <input type="text" disabled="disabled" class="form-control" value='{{selected_model.price}}'><br>
+
+  <label for="lastname">SKU</label>
+  <input type="text" disabled="disabled" class="form-control" value='{{selected_model.sku}}'><br>
+
+ <label for="lastname">Additional Information</label>
+  <input type="text" disabled="disabled" class="form-control" value='{{selected_model.info}}'><br>
+
+   <label for="lastname">Units</label>
+  <input type="text" class="form-control"><br>
+
+
+<button type="button" class="btn btn-default" ui-sref="parts-confirmation">Order Part(s)</button>
+
+<script type='text/ng-template' id='parts.html'>
+	 <div class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">List of Available Parts</h4>
+          </div>
+          <div class="modal-body">
+          <div ng-repeat="part in parts"> 
+           <a type='button' class='btn btn-primary btn-timesheet-favorite' ng-click="select({{part}})" data-dismiss="modal" ><span class='timesheet-modal-name'> {{part.name}} </span> {{part.manu}}</a>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" ng-click="close()" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ </script>	
+
+ <script type='text/ng-template' id='types.html'>
+   <div class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">List of Available Models</h4>
+          </div>
+          <div class="modal-body">
+           <div ng-repeat="type in types"> 
+            <a type='button' class='btn btn-primary btn-timesheet-favorite' ng-click="select({{type}})" data-dismiss="modal" >
+              <span><strong>Model:</strong> {{type.model}} - ${{type.price}}</span> <br>{{type.info}}</a>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" ng-click="close()" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ </script>  	

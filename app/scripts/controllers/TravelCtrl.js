@@ -72,13 +72,13 @@ angular.module('TravelCtrl',[])
 
 	$scope.clear = function(){
 		$scope.report.expense = "";
-		// $scope.report.name = $scope.report_data.name;
-		// $scope.report.dept = $scope.report_data.dept;
-		// $scope.report.email = $scope.report_data.email;
-		// $scope.report.curr_date = $scope.report_data.curr_date;
-		// $scope.report.start_date = $scope.report_data.start_date;
-		// $scope.report.close_date = $scope.report_data.close_date;
-		// $scope.report.desc = $scope.report_data.desc;
+		$scope.report.name = "";
+		$scope.report.dept = "";
+		$scope.report.email = "";
+		$scope.report.curr_date = "";
+		$scope.report.start_date = "";
+		$scope.report.close_date = "";
+		$scope.report.desc = "";
 	};
 
 

@@ -35,7 +35,11 @@ angular
     'TimesheetCtrl',
     'TimesheetService',
     'TravelCtrl',
-    'TravelService'
+    'TravelService',
+    'PartCtrl',
+    'PartService',
+    'PartsModalCtrl',
+    'ModelModalCtrl'
   ])
   .config(['$stateProvider', '$urlRouterProvider', 
   	function($stateProvider, $urlRouterProvider){
@@ -71,6 +75,16 @@ angular
     url: '/expenses',
     templateUrl: 'views/expenses.html',
     controller: 'TravelCtrl'
+  })
+  .state('parts', {
+    url: '/parts',
+    templateUrl: 'views/parts.html',
+    controller: 'PartCtrl'
+  })
+   .state('parts-confirmation', {
+    url: '/parts-confirmation',
+    templateUrl: 'views/parts-confirmation.html',
+    controller: 'PartCtrl'
   })
   .state('travel', {
     url: '/travel',
