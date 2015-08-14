@@ -53,8 +53,15 @@ angular.module('ModalCtrl', [])
 	 	// window.location.reload(); 
 	  };
 
-	  $scope.hide = function(result) {
+	  $scope.approve = function(result) {
 	  	OrderService.approve(order.id);
+	 	close(result, 500);
+
+	 	// window.location.reload(); 
+	  };
+
+	  $scope.reject = function(result) {
+	  	OrderService.reject(order.id);
 	 	close(result, 500);
 
 	 	// window.location.reload(); 

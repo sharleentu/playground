@@ -1,0 +1,58 @@
+ <div class='timesheet-calendar'> <div class='timesheet-box' ng-repeat='a in arr'>
+  	<div> {{a.month}} / {{a.date}} </div>
+
+  </div>
+  </div>
+
+
+
+
+
+
+  <h2> Entry Details </h2>
+
+  <label>Select Favorite or Worklist</label>
+  <input type="text" class="form-control" ng-click='show_list({{favorites}})' value='{{selected_favorite.name}}'><br>
+
+
+  <label for="lastname">Duration</label>
+  <input type="text" class="form-control" value='{{selected_favorite.duration}}'><br>
+
+   <label for="lastname">Notes</label>
+  <input type="text" class="form-control" ng-model="formData.last_name"><br>
+
+
+  <h2> Time Assignment </h2>
+
+   <label for="lastname">Att./Absence Type</label>
+  <input type="text" class="form-control" value='{{selected_favorite.att}}'><br>
+
+   <label for="lastname">Activity Type</label>
+  <input type="text" class="form-control" value='{{selected_favorite.activity}}'><br>
+
+ <label for="lastname">WBS Element</label>
+  <input type="text" class="form-control" value='{{selected_favorite.wbs}}'><br>
+
+
+<button type="button" class="btn btn-default">Submit Timesheet</button>
+
+<script type='text/ng-template' id='timesheet.html'>
+	 <div class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Project / Favorites List</h4>
+          </div>
+          <div class="modal-body">
+          <div ng-repeat="favorite in favorites"> 
+           <a type='button' class='btn btn-primary btn-timesheet-favorite' ng-click="select({{favorite}})" data-dismiss="modal" ><span class='timesheet-modal-name'> {{favorite.name}} </span> {{favorite.duration}}</a>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" ng-click="close()" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ </script>		

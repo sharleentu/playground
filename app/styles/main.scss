@@ -74,6 +74,12 @@ body {
   margin-right:auto;
 }
 
+.gray-box{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
 
 
 .nav-delivery{
@@ -128,7 +134,9 @@ body {
   }
 }
 
-
+.btn-right{
+  float: right;
+}
 .pair-label{
   text-align: right;
 }
@@ -153,12 +161,34 @@ display: inline;
 
 .btn-action{
   float:right;
+  margin: 5px;
 }
 
 .btn-group{
   float:right;
 }
 
+.btn-timesheet-favorite{
+  display: block;
+  line-height: 30px;
+  background-color: white;
+  margin-top: 5px;
+  color: black;
+}
+.timesheet-calendar{
+  display:flex;
+  flex-direction: row;
+}
+.timesheet-modal-name{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.timesheet-box{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
 .opp-row-new{
   background-color: gray;
 }

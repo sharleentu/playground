@@ -30,7 +30,10 @@ angular
     'LeadService',
     'PtoCtrl',
     'PtoService',
-    'ModalCtrl2'
+    'ModalCtrl2',
+    'ModalCtrl3',
+    'TimesheetCtrl',
+    'TimesheetService'
   ])
   .config(['$stateProvider', '$urlRouterProvider', 
   	function($stateProvider, $urlRouterProvider){
@@ -56,9 +59,25 @@ angular
   	templateUrl: 'views/purchase/main.html',
   	controller: 'PurchaseCtrl'
   })
+  .state('timesheet', {
+    url: '/timesheet',
+    templateUrl: 'views/timesheets.html',
+    controller: 'TimesheetCtrl'
+
+  })
   .state('pto', {
     url: '/pto',
     templateUrl: 'views/pto.html',
+    controller: 'PtoCtrl'
+  })
+  .state('pto-request', {
+    url: '/pto-request',
+    templateUrl: 'views/pto-request.html',
+    controller: 'PtoCtrl'
+  })
+  .state('pto-confirm', {
+    url: '/pto-confirm',
+    templateUrl: 'views/pto-confirm.html',
     controller: 'PtoCtrl'
   })
   .state('delivery', {

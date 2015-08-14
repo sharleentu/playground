@@ -1,0 +1,48 @@
+<h2> Submit New PTO Request </h2>
+
+<label for="firstname">First Name</label>
+<input type="text" class="form-control" id='firstname' placeholder="Bob" ng-model="formData.first_name"><br>
+
+<label for="lastname">Last Name</label>
+<input type="text" class="form-control" id="lastname" placeholder="Smith" ng-model="formData.last_name"><br>
+
+<label for="form-control">Department</label>
+<select class="form-control" ng-model="formData.status">
+  <option>Product</option>
+  <option>Marketing</option>
+  <option>Sales</option>
+  <option>R&D</option>
+  <option>Pre-Sales</option>
+  <option>Human Resources</option>
+</select>
+<br>
+ 
+<label for="email">Email</label>
+<input type="email" class="form-control" id="email" placeholder="bob@company.com" ng-model="formData.email" >
+<br>
+
+<label for="date">Today's Date</label>
+<input type="date" class="form-control" id="date" ng-model="formData.date">
+<br>
+ 
+<label for="date">Start Date of PTO</label>
+<input type="date" class="form-control" id="date" ng-model="formData.date">
+<br>
+
+<label for="date">End Date of PTO</label>
+<input type="date" class="form-control" id="date" ng-model="formData.date">
+<br>
+
+<label for="form-control">Reason for PTO</label>
+<select class="form-control" ng-model="formData.status">
+	<option>Sick</option>
+	<option>Vacation</option>
+	<option>Paternity Leave</option>
+	<option>Maternity Leave</option>
+</select>
+<br>
+
+<a type="button" class="btn btn-primary btn-action" ui-sref="pto-confirm"> Submit Request </a>
+
+
+

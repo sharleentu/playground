@@ -48,8 +48,13 @@ angular.module('ModalCtrl2', [])
 	 	close(result, 500);
 	 };
 
-	  $scope.hide = function(result) {
-	  	PtoService.hide(request.id);
+	  $scope.approve = function(result) {
+	  	PtoService.approve(request.id);
+	 	close(result, 500);
+	  };
+
+	   $scope.reject = function(result) {
+	  	PtoService.reject(request.id);
 	 	close(result, 500);
 	  };
 }]);
