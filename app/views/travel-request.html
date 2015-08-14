@@ -1,0 +1,88 @@
+<h2> Submit New Expense Report </h2>
+
+<label for="firstname">Expense Report Name</label>
+<input type="text" class="form-control" id='firstname' ng-model="report.expense"><br>
+<div><label class='form-label' for="today">Today's Date</label></div>
+<input type="date" class='form-control' id="today" ng-model="report.curr_date">
+
+
+<div class='row topic'>
+  <div class='pair-label col-xs-6 col-sm-3'>
+    <div><label class='form-label'  for="firstname"> Name</label></div>
+    <div><label class='form-label'  for="dept">Department</label></div>
+  </div>
+
+  <div class='pair-name col-xs-6 col-sm-3'>
+    <input type="text" class='form-input' id='firstname' placeholder="Bob" ng-model="report.name">
+    <select class="form-input" id='dept' ng-model="request.dept">
+      <option>Product</option>
+      <option>Marketing</option>
+      <option>Sales</option>
+      <option>R&D</option>
+      <option>Pre-Sales</option>
+      <option>Human Resources</option>
+    </select>
+  </div>
+
+  <div class='pair-label col-xs-6 col-sm-3'>
+    <div><label class='form-label'  for="email">Email</label></div>
+    <div><label class='form-label'  for="start">Start Date</label></div>
+     <div><label class='form-label'  for="end">End Date</label></div>
+  </div>
+
+  <div class='pair-name col-xs-6 col-sm-3'>
+    <input type="email" class='form-input'   id="email" placeholder="bob@company.com" ng-model="report.email" >
+    <input type="date" class='form-input'  id="start" ng-model="report.start_date">
+    <input type="date" class='form-input'  id="end" ng-model="report.end_date">
+  </div>
+</div>
+
+ 
+<div class='row topic'>
+  <div class='pair-label col-xs-6 col-sm-3'>
+    <div><label class='form-label'  for="desc">Description</label></div>
+    <div><label class='form-label'  for="loc">Location</label></div>
+  </div>
+
+  <div class='pair-name col-xs-6 col-sm-3'>
+    <input type="text" class="form-input" id="desc" ng-model="report.desc">
+		<input type="text" class="form-input" id="loc" ng-model="report.location">
+  </div>
+</div>
+
+
+<h3> Items </h3>
+
+<table class='table table-hover table-bordered'> 
+  <thead> 
+    <tr>
+  	  <td></td>
+      <td><strong>Type</strong></td>
+      <td><strong>Description</strong></td>
+      <td><strong>Total</strong></td>  
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='item in new_items_arr'>
+    <td></td>
+      <td>{{ item.type }}</td>
+      <td>{{ item.desc }}</td>
+      <td>${{ item.total }}</td>
+    </tr>
+   	<tr>
+   		<td>Total</td>
+   		<td></td>
+   		<td></td>
+   		<td>${{getTotal()}}</td>
+   	</tr>
+  </tbody>
+</table>
+<hr>  
+
+<a type="button" class="btn btn-primary btn-action" ng-click="send_report(report)" ui-sref="expense-add"> Add New Item </a>
+
+
+<a type="button" class="btn btn-primary btn-action" ng-click="add_expense(report)"ui-sref="travel"> Submit Expense Report </a>
+
+
+

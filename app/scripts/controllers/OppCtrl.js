@@ -35,7 +35,6 @@ angular.module('OppCtrl',[])
 
 	$scope.id = $stateParams.id;
 
-
 	$scope.opps.forEach(function(opp) {
 		if(opp.id === $scope.id) {
 			$scope.opp = opp;

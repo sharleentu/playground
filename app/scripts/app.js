@@ -67,6 +67,11 @@ angular
     controller: 'TimesheetCtrl'
 
   })
+  .state('expenses', {
+    url: '/expenses',
+    templateUrl: 'views/expenses.html',
+    controller: 'TravelCtrl'
+  })
   .state('travel', {
     url: '/travel',
     templateUrl: 'views/travel.html',
@@ -75,6 +80,16 @@ angular
   .state('travel-detail', {
     url: '/travel-detail/:id',
     templateUrl: 'views/travel-detail.html',
+    controller: 'TravelCtrl'
+  })
+  .state('travel-request', {
+    url: '/travel-request',
+    templateUrl: 'views/travel-request.html',
+    controller: 'TravelCtrl'
+  })
+  .state('expense-add', {
+    url: '/travel-request-add',
+    templateUrl: 'views/expense-add.html',
     controller: 'TravelCtrl'
   })
   .state('pto', {

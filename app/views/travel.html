@@ -14,7 +14,7 @@
 				<td> {{ request.curr_date }}</td>
 				<td> <a ui-sref='travel-detail({id: request.id})'>{{ request.expense }} </a></td>
 				<td> {{ request.name }} </td>
-				<td> {{ request.total }} </td>
+				<td> ${{ request.total }} </td>
 				<td> <a class='btn btn-info btn-xs' disabled="disabled"> {{ request.status }} </a> </td>
 				<td>
 					 <a class="btn btn-success btn-xs" href ng-click="show({{request}})">Approve</a> 

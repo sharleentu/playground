@@ -1,0 +1,40 @@
+<h2> Add New Expense </h2>
+
+
+<label for="form-control">Expense Type</label>
+<select class="form-control" ng-model="expense.type">
+  <option>Transportation - Airfare</option>
+  <option>Transportation - Bus </option>
+  <option>Transportation - Mileage (Personal Car Only) </option>
+  <option>Transportation - Parking </option>
+  <option>Transportation - Rental Car </option>
+  <option>Transportation - Trains </option>
+  <option>Transportation - Other </option>
+  <option>Lodging - Hotel Expense</option>
+  <option>Lodging - Other</option>
+  <option>Meals - Group Meals</option>
+  <option>Meals - Other</option>
+  <option>Other - Seminar/Conference Registration</option>
+  <option>Other - Online Fees</option>
+  <option>Other - Supplies</option>
+  <option>Other - Other</option>
+</select>
+<br>
+
+<label for="total">Total</label>
+<div class="input-group">
+<span class="input-group-addon">$</span>
+<input type="number" class="form-control" id='total' placeholder="100.00" ng-model="expense.total">
+</div>
+<br>
+ 
+
+<label for="text">Description</label>
+<input type="text" class="form-control" id="date" ng-model="expense.desc">
+<br>
+ 
+<a type="button" class="btn btn-primary btn-action" ng-click="add(expense) "ui-sref="travel-request"> Add Item </a>
+<a type="button" class="btn btn-primary btn-action" ui-sref="travel-request"> Cancel </a>
+
+
+
