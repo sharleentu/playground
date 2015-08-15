@@ -39,7 +39,9 @@ angular
     'PartCtrl',
     'PartService',
     'PartsModalCtrl',
-    'ModelModalCtrl'
+    'ModelModalCtrl',
+    'ProductCtrl',
+    'ProductService'
   ])
   .config(['$stateProvider', '$urlRouterProvider', 
   	function($stateProvider, $urlRouterProvider){
@@ -65,16 +67,19 @@ angular
   	templateUrl: 'views/purchase/main.html',
   	controller: 'PurchaseCtrl'
   })
+   .state('cable', {
+    url: '/cable',
+    templateUrl: 'views/cable.html'
+  })
+   .state('product-lookup', {
+    url: '/product-lookup',
+    templateUrl: 'views/product-lookup.html',
+    controller: 'ProductCtrl'
+  })
   .state('timesheet', {
     url: '/timesheet',
     templateUrl: 'views/timesheets.html',
     controller: 'TimesheetCtrl'
-
-  })
-  .state('expenses', {
-    url: '/expenses',
-    templateUrl: 'views/expenses.html',
-    controller: 'TravelCtrl'
   })
   .state('parts', {
     url: '/parts',
@@ -88,37 +93,42 @@ angular
   })
   .state('travel', {
     url: '/travel',
-    templateUrl: 'views/travel.html',
+    templateUrl: 'views/expense/travel.html',
     controller: 'TravelCtrl'
   })
   .state('travel-detail', {
     url: '/travel-detail/:id',
-    templateUrl: 'views/travel-detail.html',
+    templateUrl: 'views/expense/travel-detail.html',
     controller: 'TravelCtrl'
   })
   .state('travel-request', {
     url: '/travel-request',
-    templateUrl: 'views/travel-request.html',
+    templateUrl: 'views/expense/travel-request.html',
+    controller: 'TravelCtrl'
+  })
+  .state('expenses', {
+    url: '/expenses',
+    templateUrl: 'views/expense/expenses.html',
     controller: 'TravelCtrl'
   })
   .state('expense-add', {
     url: '/travel-request-add',
-    templateUrl: 'views/expense-add.html',
+    templateUrl: 'views/expense/expense-add.html',
     controller: 'TravelCtrl'
   })
   .state('pto', {
     url: '/pto',
-    templateUrl: 'views/pto.html',
+    templateUrl: 'views/PTO/pto.html',
     controller: 'PtoCtrl'
   })
   .state('pto-request', {
     url: '/pto-request',
-    templateUrl: 'views/pto-request.html',
+    templateUrl: 'views/PTO/pto-request.html',
     controller: 'PtoCtrl'
   })
   .state('pto-confirm', {
     url: '/pto-confirm',
-    templateUrl: 'views/pto-confirm.html',
+    templateUrl: 'views/PTO/pto-confirm.html',
     controller: 'PtoCtrl'
   })
   .state('delivery', {

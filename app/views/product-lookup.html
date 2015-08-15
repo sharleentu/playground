@@ -1,0 +1,20 @@
+
+  <h2> Look up Retail Product</h2>
+
+  <label>UPC</label>
+  <input type="text" class="form-control" ng-click='show_list(parts)' value='{{selected_part.name}}'><br>
+
+<table class='table table-bordered table-hover'> 
+  <thead id='table-header'>
+    <td> <strong>Product Name</strong></td>
+    <td> <strong>ISBN </strong></td>
+    <td> <strong>Desc</strong></td>
+  </thead>
+  <tbody>
+    <tr ng-repeat="product in products"> 
+      <td>{{product.name}}</td>
+      <td>{{product.upc}}</td>
+      <td>{{product.desc}}</td>
+     </tr>
+   </tbody>
+</table>
