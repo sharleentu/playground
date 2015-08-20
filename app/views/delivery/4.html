@@ -3,19 +3,19 @@
 
 <div class='topic-delivery '>
 	<h3 class='text-center'> Your form has been submitted. </h3>
-	<p> <strong>Contractor: </strong>{{formData.first_name}} {{formData.last_name}}</p>
-	<p> <strong>Contractor ID: </strong>{{formData.id}}</p>
-	<p> <strong>Contractor email: </strong>{{formData.email}}</p><br>
-	<p> <strong>Package order number: </strong>{{formData.order}}</p>
-	<p> <strong>Sent to: </strong> {{formData.recipient}}</p>
-	<p> {{formData.time}} {{formData.date}} </p>
-	<p> {{formData.addr}}</p>
-	<p> <strong>Delivery status: </strong>{{formData.status}}</p>
-	<p> <strong>Number of Packages: </strong>{{formData.n_items}}</p>
-	<p> <strong>Package desc: </strong>{{formData.desc}}</p>
-	<p> <strong>Additional notes: </strong>{{formData.notes}}</p>
+	<span> <strong>Contractor: </strong> </span> <span> {{formData.first_name}} {{formData.last_name}}</span><br>
+	<span> <strong>Contractor ID: </strong> </span> <span> {{formData.id}}</span><br>
+	<span> <strong>Contractor email: </strong> </span> <span> {{formData.email}}</span><br>
+	<span> <strong>Package order number: </strong> </span> <span> {{formData.order}}</span><br>
+	<span> <strong>Sent to: </strong> </span> <span>  {{formData.recipient}}</span><br>
+	<span> {{formData.time}} {{formData.date}} </span><br>
+	<span> {{formData.addr}}</span><br>
+	<span> <strong>Delivery status: </strong> </span> <span>  {{formData.status}}</span><br>
+	<span> <strong>Number of Packages: </strong> </span> <span>  {{formData.n_items}}</span><br>
+	<span> <strong>Package desc: </strong> </span> <span>  {{formData.desc}}</span><br>
+	<span> <strong>Additional notes: </strong> </span> <span> {{formData.notes}}</span><br>
 
-
+	<br> 
 	<a type="button" class="btn btn-primary" ui-sref="/"> Back to Home </a>
 
 </div>

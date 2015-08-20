@@ -1,0 +1,19 @@
+
+<h2>Employee Directory</h2>
+
+<div class="form-group">
+  <input ng-model="search.name"></label>
+  <a type="button" class="btn btn-primary btn-xs" ui-sref='directory-results({search: search.name})'>Search by name</a>
+</div>
+
+<div class="form-group">
+<input ng-model="search.pos"></label>
+ <a type="button" class="btn btn-primary btn-xs" ui-sref='directory-results({search: search.dept})'>Search by Department</a>
+ </div>
+
+<div class="form-group">
+<input ng-model="search.dept"></label>
+<a type="button" class="btn btn-primary btn-xs" ui-sref='directory-results({search: search.loc})'>Search by Title</a>
+</div>
+
+

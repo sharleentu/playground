@@ -1,0 +1,30 @@
+
+  <label>Search: </label>
+  <input type="text" class="form-control" ng-click='show_list(parts)' ng-model='searchTask'><br>
+
+<a type="button" class="btn btn-primary btn-action" ui-sref='task-new'> New Task </a>
+
+
+<table class='table table-bordered table-hover'> 
+	<thead id='table-header'>
+		<td><strong>Date</strong></td>
+		<td><strong>Status</td>
+		<td><strong>Subject</strong></td>
+		<td><strong>Name</td>
+		<td><strong>Related To</strong></td>
+		<td><strong>Account</strong></td>
+
+	</thead>
+	<tbody>
+		<tr ng-repeat="task in tasks | filter:searchTask"> 
+			<td>{{ task.date }} </td>
+			<td>{{ task.status }} </td>
+			<td><a ui-sref='task-detail({id: task.id})'>{{ task.subj }} </a></td>
+			<td>{{ task.name }} </td>
+			<td>{{ task.opp }} </td>
+			<td>{{ task.acct }} </td>
+		</tr>
+	</tbody>
+</table>	
+
+

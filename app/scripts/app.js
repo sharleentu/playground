@@ -41,7 +41,11 @@ angular
     'PartsModalCtrl',
     'ModelModalCtrl',
     'ProductCtrl',
-    'ProductService'
+    'ProductService',
+    'TaskService',
+    'TaskCtrl',
+    'DirectoryService',
+    'DirectoryCtrl'
   ])
   .config(['$stateProvider', '$urlRouterProvider', 
   	function($stateProvider, $urlRouterProvider){
@@ -199,9 +203,35 @@ angular
     templateUrl: 'views/sales/lead-detail.html',
     controller: 'LeadCtrl'
   })
-  .state('sales.tasks', {
+  .state('tasks', {
     url: '/tasks',
     templateUrl: 'views/sales/tasks.html',
+    controller: 'TaskCtrl'
+  })
+  .state('task-new', {
+    url: '/task-new',
+    templateUrl: 'views/sales/task-new.html',
+    controller: 'TaskCtrl'
+  })
+  .state('task-detail', {
+    url: '/tasks/:id',
+    templateUrl: 'views/sales/task-detail.html',
+    controller: 'TaskCtrl'
+  })
+  .state('directory', {
+    url: '/directory',
+    templateUrl: 'views/directory.html',
+    controller: 'DirectoryCtrl'
+  })
+  .state('directory-results', {
+    url: '/directory/:search',
+    templateUrl: 'views/directory-results.html',
+    controller: 'DirectoryCtrl'
+  })
+  .state('directory2', {
+    url: '/directory2',
+    templateUrl: 'views/directory2.html',
+    controller: 'DirectoryCtrl'
   });
   $urlRouterProvider.when("views/sales/main.html", "views/sales/home.html"); 
 }]);

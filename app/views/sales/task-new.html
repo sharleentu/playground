@@ -1,0 +1,66 @@
+<div id='new-opp'>
+  <div class='flex-row'>
+    <h1> New Task </h1>
+    <div class='btn-group'>
+      <a type="button" class="btn btn-primary" ng-click="add(newTask)" ui-sref='tasks'>Save</a>
+      <a type="button" class="btn btn-primary" ng-click="add(newTask)" ui-sref='task-new'> Save and New </a>
+      <a type="button" class="btn btn-primary" ui-sref='tasks'> Cancel </a>
+    </div>
+  </div>
+
+	<h3> Task Information </h3>
+
+	<div class='row topic'>
+	  <div class='pair-label col-xs-6 col-sm-3'>
+	    <div><strong><label class='form-label' for='owner'>Assigned To :</label></strong></div>
+	    <div><strong><label class='form-label' for='name'>Subject :</label></strong></div>
+	    <div><strong><label class='form-label' for='acct'>Due Date :</label></strong></div>
+	    <div><strong><label class='form-label' for='type'>Comments :</label></strong></div>
+	  </div>
+
+	  <div class='pair-name col-xs-6 col-sm-3'>
+	    <div><input class='form-input' type='text' id='owner' ng-model="newTask.acct"></div>
+	    <div><input class='form-input' type='text' id='name' ng-model="newTask.subj"></div>
+	    <div><input class='form-input' type='text' id='acct' ng-model="newTask.date"></div>
+	    <div><input class='form-input' type='text' id='acct' ng-model="newTask.notes"></div>
+	  </div>
+
+	  <div class='pair-label col-xs-6 col-sm-3'>
+	    <div><strong><label class='form-label' for='date'>Related to :</label></strong></div>
+	    <div><strong><label class='form-label' for='stage'>Name :</label></strong></div>
+	  </div>
+
+	  <div class='pair-name col-xs-6 col-sm-3'>
+	    <div><input class='form-input' type='text' id='acct' ng-model="newTask.opp"></div>
+	    <div><input class='form-input' type='text' id='acct' ng-model="newTask.name"></div>
+	  </div>
+	</div>
+
+	<h3> Additional Information </h3>
+	<div class='row topic'>
+	  <div class='pair-label col-xs-6 col-sm-3'>
+	    <div><strong><label class='form-label' for='src'>Status :</label></strong></div> 
+	    <div><strong><label class='form-label' for='step'>Priority :</label></strong></div> 
+	  </div>
+
+	  <div class='pair-name col-xs-6 col-sm-3'>
+		<div>
+	        <select class="form-control form-input" ng-model="newTask.status">
+	          <option>Not Started</option>
+	          <option>In Progress</option>
+	          <option>Completed</option>
+	          <option>Waiting on someone else</option>
+	          <option>Deferred</option>
+	        </select>
+	    </div>	
+	    <div>
+	        <select class="form-control form-input" ng-model="newTask.priority">
+	          <option>High</option>
+	          <option>Normal</option>
+	          <option>Low</option>
+	        </select>
+	    </div>	    
+	  </div>
+	</div>
+</div>
+

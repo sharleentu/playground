@@ -1,0 +1,24 @@
+
+  <h2>Employee Directory</h2>
+
+  <label>Search</label>
+  <input type="text" class="form-control" ng-click='show_list(parts)' ng-model='searchPeople'><br>
+
+<table class='table table-bordered table-hover'> 
+  <thead id='table-header'>
+    <td><strong>Name</strong></td>
+    <td><strong>Position </strong></td>
+    <td><strong>Number</strong></td>
+    <td><strong>Dept </strong></td>
+    <td><strong>Email</strong></td>
+  </thead>
+  <tbody>
+    <tr ng-repeat="person in people | filter: searchPeople"> 
+      <td>{{person.name}}</td>
+      <td>{{person.pos}}</td>
+      <td>{{person.num}}</td>
+      <td>{{person.dept}}</td>
+      <td>{{person.email}}</td>
+     </tr>
+   </tbody>
+</table>

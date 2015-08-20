@@ -1,0 +1,61 @@
+<div class='container-top'>
+	<a type="button" class="btn btn-primary" ui-sref='tasks'> Back to My Tasks</a>
+
+	<h3> Task detail </h3>
+
+	<div class='row topic'>
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'>Assigned To :</strong></div>
+			<div><strong class='form-label'>Subject :</strong></div>
+			<div><strong class='form-label'>Due Date :</strong></div>
+			<div><strong class='form-label'>Comments :</strong></div>
+		</div>
+		<div class='pair-name col-xs-6 col-sm-3'>
+			<div class='form-label'>{{task.acct}}</div>
+			<div class='form-label'>{{task.subj}}</div>
+			<div class='form-label'>{{task.date}}</div>
+			<div class='form-label'>{{task.notes}}</div>
+		</div>
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'>Related To :</strong></div>
+			<div><strong class='form-label'>Name :</strong></div>
+		</div>
+		<div class='pair-name col-xs-6 col-sm-3'>
+			<div class='form-label'>{{task.opp}}</div>
+			<div class='form-label'>{{task.acct}}</div>
+		</div>
+	</div>
+
+	<h3> Additional Information </h3>
+	<div class='row topic'>
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'>Status :</strong></div> 
+			<div><strong class='form-label'>Priority :</strong></div> 
+		</div>
+		<div class='pair-name'>
+			<div class='form-label'>{{task.status}}</div> 
+			<div class='form-label'>{{task.priority}}</div> 
+		</div>
+	</div>
+
+
+	<h3> System Information </h3>
+
+	<div class='row topic'>
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'> Created By :</strong></div>
+		</div>
+
+		<div class='pair-name col-xs-6 col-sm-3'>
+			<div class='form-label'>{{task.created_by}}</div>
+		</div>
+
+		<div class='pair-label col-xs-6 col-sm-3'>
+			<div><strong class='form-label'>Last Edited By :</strong></div>
+		</div>
+
+		<div class='pair-name col-xs-6 col-sm-3'>
+			<div class='form-label'>{{task.last_edited}}</div>
+		</div>
+	</div>
+</div>
