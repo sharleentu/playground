@@ -5,10 +5,10 @@ angular.module('OppService',[]).factory('OppService', function() {
 	  {	
 	  	id: "1",
 	  	owner: "John Smith",
-	  	name: "Acme-123",
+	  	name: "Amazon Services",
 	  	account: "Amazon",
 	  	type: "Existing Business",
-	  	phone: "",
+	  	phone: "151-422-3355",
 	  	addr: "12 Stanford Street, Union City, CA 12834",
 	  	close_date: "7/21/2015", 
 	  	stage: "Perception Analysis",
@@ -195,7 +195,7 @@ angular.module('OppService',[]).factory('OppService', function() {
 
 
 	];
-
+	var selected_opp;
 
   return {
     all: function() {
@@ -203,6 +203,12 @@ angular.module('OppService',[]).factory('OppService', function() {
     },
     add: function(new_opp) {
       return opps.push(new_opp);
+    },
+    select_opp: function(new_opp) {
+    	selected_opp = new_opp;
+    },
+    selected_opp: function() {
+    	return selected_opp;
     }
   };
 

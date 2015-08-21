@@ -173,14 +173,15 @@ display: inline;
   line-height: 30px;
   background-color: white;
   margin-top: 5px;
+  text-align: left;
   color: black;
 }
 .timesheet-calendar{
   display:flex;
   flex-direction: row;
 }
-.timesheet-modal-name{
-  font-size: 22px;
+.part-name{
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -214,6 +215,9 @@ line-height: 30px;
   justify-content: space-between;
 }
 
+.modal-part{
+  width: 80%;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {

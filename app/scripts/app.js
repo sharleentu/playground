@@ -45,7 +45,8 @@ angular
     'TaskService',
     'TaskCtrl',
     'DirectoryService',
-    'DirectoryCtrl'
+    'DirectoryCtrl',
+    'TaskModalCtrl'
   ])
   .config(['$stateProvider', '$urlRouterProvider', 
   	function($stateProvider, $urlRouterProvider){

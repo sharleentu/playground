@@ -62,7 +62,7 @@ angular.module('PartService',[]).factory('PartService', function() {
 	  	{
 	  		model: "A1436",
 	  		price: "91.99",
-	  		info: "Apple Original AC Adapter 45 Magsafe 2 for Macbook Air 11 & 13 in. Mid 2012 - Early 2014 NEW",
+	  		info: "Apple Original AC Adapter 45 Magsafe 2 for Macbook Air 11 & 13 in. NEW",
 	  		sku: "0009816"
 	  	}]
 	  },
@@ -130,7 +130,41 @@ angular.module('PartService',[]).factory('PartService', function() {
 	  		sku: "1311798532"
 	  	}]
 	  },
-	 
+	  {	
+	  	id:'5',
+	  	name: 'Cash Registers & Supplies',
+	  	manu: 'OfficeMax',
+	  	types: [{
+	  		model: "TSP143U",
+	  		price: "257.99",
+	  		info: "Star Micronics Receipt Printer",
+	  		sku: "823209"
+	  	},
+	  	{
+	  		model: "IJ7200",
+	  		price: "501.99",
+	  		info: "Addmaster Inkjet Printer Monochrome - Desktop - Receipt Print",
+	  		sku: "864006"
+	  	},
+	  	{
+	  		model: "TM-T88V",
+	  		price: "84.99",
+	  		info: "Adesso 13 inch. POS Cash Drawer with Removable Cash Tray",
+	  		sku: "4104999"
+	  	},
+	  	{
+	  		model: "SP742ML",
+	  		price: "316.99",
+	  		info: "Star Micronics Dot Matrix Printer - Monochrome - Desktop - Receit Print",
+	  		sku: "136846"
+	  	},
+	  	{
+	  		model: "WCD-5000",
+	  		price: "173.99",
+	  		info: "Cash Drawer",
+	  		sku: "1843555"
+	  	}]
+	  }
 	];
 
 	var selected_part;

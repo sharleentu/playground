@@ -10,109 +10,109 @@ angular.module('ProductService',[]).factory('ProductService', function() {
 	  },
 	  {	
 	  	name: "Volmar",
-	  	upc: "12497684",
+	  	upc: "18264859",
 	  	desc: "Swivel Chair with headrest/armrests",
 	  	price: "279.00"
 	  },
 	  {	
 	  	name: "Kolon",
-	  	upc: "12497684",
+	  	upc: "98996144",
 	  	desc: "Floor protector",
 	  	price: "199.00"
 	  },
 	  {	
 	  	name: "Patrik",
-	  	upc: "12497684",
+	  	upc: "00100523",
 	  	desc: "Conference Chair",
 	  	price: "89.00"
 	  },
 	  {	
 	  	name: "Nominell",
-	  	upc: "12497684",
+	  	upc: "1427961",
 	  	desc: "Swivel chair with armrests",
 	  	price: "19.10"
 	  },
 	  {	
 	  	name: "Feodor",
-	  	upc: "12497684",
+	  	upc: "2322478",
 	  	desc: "Swivel chair with armrests",
 	  	price: "79.99"
 	  },
 	  {	
 	  	name: "Molte",
-	  	upc: "12497684",
+	  	upc: "9287652",
 	  	desc: "Desk chair",
 	  	price: "14.99"
 	  },
 	  {	
 	  	name: "Bekant",
-	  	upc: "12497684",
+	  	upc: "10970791",
 	  	desc: "Corner Desk-left",
 	  	price: "19.10"
 	  },
 	  {	
 	  	name: "Bekant",
-	  	upc: "12497684",
+	  	upc: "4385654541",
 	  	desc: "5 sided desk",
 	  	price: "79.99"
 	  },
 	  {	
 	  	name: "Bekant",
-	  	upc: "12497684",
+	  	upc: "10294232",
 	  	desc: "Conference table",
 	  	price: "14.99"
 	  },
 	  {	
 	  	name: "Galant",
-	  	upc: "12497684",
+	  	upc: "09836123",
 	  	desc: "Add-on units for desk",
 	  	price: "19.10"
 	  },
 	  {	
 	  	name: "Hemns",
-	  	upc: "12497684",
+	  	upc: "510364544",
 	  	desc: "Secretary with add-on-unit+bookcase",
 	  	price: "79.99"
 	  },
 	  {	
 	  	name: "Alex",
-	  	upc: "12497684",
+	  	upc: "101013474",
 	  	desc: "Desk",
 	  	price: "14.99"
 	  },
 	  {	
 	  	name: "Alex",
-	  	upc: "12497684",
+	  	upc: "784529474",
 	  	desc: "Desk",
 	  	price: "19.10"
 	  },
 	  {	
 	  	name: "Malm",
-	  	upc: "12497684",
+	  	upc: "239476515",
 	  	desc: "Desk with pull-out panel",
 	  	price: "79.99"
 	  },
 	  {	
 	  	name: "Micke",
-	  	upc: "12497684",
+	  	upc: "91929345",
 	  	desc: "Add-on unit high",
 	  	price: "14.99"
 	  },
 	  {	
 	  	name: "ArkelStorp",
-	  	upc: "12497684",
+	  	upc: "784529474",
 	  	desc: "Desk",
 	  	price: "19.10"
 	  },
 	  {	
 	  	name: "Fredde",
-	  	upc: "12497684",
+	  	upc: "7845674",
 	  	desc: "Computer work station",
 	  	price: "79.99"
 	  },
 	  {	
 	  	name: "Liatorp",
-	  	upc: "12497684",
+	  	upc: "98997768",
 	  	desc: "Desk",
 	  	price: "14.99"
 	  }

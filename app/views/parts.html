@@ -4,7 +4,6 @@
   <label>Select Product Type</label>
   <input type="text" class="form-control" ng-click='show_list(parts)' value='{{selected_part.name}}'><br>
 
-
   <label for="lastname">Manufacturer</label>
   <input type="text" disabled="disabled" class="form-control" value='{{selected_part.manu}}'><br>
 
@@ -27,8 +26,8 @@
 <button type="button" class="btn btn-default" ui-sref="parts-confirmation">Order Part(s)</button>
 
 <script type='text/ng-template' id='parts.html'>
-	 <div class="modal fade">
-      <div class="modal-dialog">
+	 <div class="modal">
+      <div class="modal-dialog modal-part">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -36,7 +35,7 @@
           </div>
           <div class="modal-body">
           <div ng-repeat="part in parts"> 
-           <a type='button' class='btn btn-primary btn-timesheet-favorite' ng-click="select({{part}})" data-dismiss="modal" ><span class='timesheet-modal-name'> {{part.name}} </span> {{part.manu}}</a>
+           <a type='button' class='btn btn-primary btn-timesheet-favorite' ng-click="select({{part}})" data-dismiss="modal" ><span class='part-name'> {{part.name}} </span> {{part.manu}}</a>
           </div>
           </div>
           <div class="modal-footer">
@@ -48,8 +47,8 @@
  </script>	
 
  <script type='text/ng-template' id='types.html'>
-   <div class="modal fade">
-      <div class="modal-dialog">
+   <div class="modal">
+      <div class="modal-dialog modal-part">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
