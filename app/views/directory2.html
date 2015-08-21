@@ -7,13 +7,35 @@
 </div>
 
 <div class="form-group">
-<input ng-model="search.pos"></label>
+<input ng-model="search.dept"></label>
  <a type="button" class="btn btn-primary btn-xs" ui-sref='directory-results({search: search.dept})'>Search by Department</a>
  </div>
 
 <div class="form-group">
-<input ng-model="search.dept"></label>
-<a type="button" class="btn btn-primary btn-xs" ui-sref='directory-results({search: search.loc})'>Search by Title</a>
+<input ng-model="search.pos"></label>
+<a type="button" class="btn btn-primary btn-xs" ui-sref='directory-results({search: search.pos})'>Search by Title</a>
 </div>
+
+
+
+<table class='table table-bordered table-hover'> 
+  <thead id='table-header'>
+    <td><strong>Name</strong></td>
+    <td><strong>Position </strong></td>
+    <td><strong>Number</strong></td>
+    <td><strong>Dept </strong></td>
+    <td><strong>Email</strong></td>
+  </thead>
+  <tbody>
+    <tr ng-repeat="person in people | filter:search"> 
+      <td>{{person.name}}</td>
+      <td>{{person.pos}}</td>
+      <td>{{person.num}}</td>
+      <td>{{person.dept}}</td>
+      <td>{{person.email}}</td>
+     </tr>
+   </tbody>
+</table>
+
 
 

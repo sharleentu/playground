@@ -25,7 +25,7 @@ angular.module('PartCtrl',[])
 
 	$scope.show_types = function(n){
 	 ModalService.showModal({
-	    templateUrl: "task-opp.html",
+	    templateUrl: "types.html",
 	    controller: "ModelModalCtrl",
 	    inputs: {
 	    	types: n
