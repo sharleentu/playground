@@ -5,7 +5,7 @@ angular.module('OppService',[]).factory('OppService', function() {
 	  {	
 	  	id: "1",
 	  	owner: "John Smith",
-	  	name: "Amazon - SAP",
+	  	name: "Amazon - Mobile Ordering",
 	  	account: "Amazon",
 	  	type: "Existing Business",
 	  	phone: "151-422-3355",
@@ -24,7 +24,7 @@ angular.module('OppService',[]).factory('OppService', function() {
 	  {	
 	  	id: "2",
 	  	owner: "James Harris",
-	  	name: "Apple HR",
+	  	name: "Apple - HR",
 	  	account: "Apple",
 	  	type: "New Business",
 	  	phone: "876-123-4581",
@@ -62,7 +62,7 @@ angular.module('OppService',[]).factory('OppService', function() {
 	  {	
 	  	id: "4",
 	  	owner: "Sara Jane",
-	  	name: "Applied - SAP Inventory",
+	  	name: "Applied - Inventory",
 	  	account: "Applied Materials",
 	  	type: "Existing Business",
 	  	phone: "801-203-3333",
@@ -80,8 +80,8 @@ angular.module('OppService',[]).factory('OppService', function() {
 	  },
 	  {	
 	  	id: "5",
-	  	owner: "Northrop Grumman - Oracle",
-	  	name: "Northrop Grumman - SAP",
+	  	owner: "Sharleen",
+	  	name: "Northrop Grumman - Purchase Order Approval",
 	  	account: "Northrop Grumman",
 	  	type: "New Business",
 	  	phone: "801-203-3333",
@@ -176,7 +176,7 @@ angular.module('OppService',[]).factory('OppService', function() {
 	  {	
 	  	id: "10",
 	  	owner: "Keoni Madrid",
-	  	name: "Instagram - SAP",
+	  	name: "Instagram - HR",
 	  	account: "Instagram",
 	  	type: "Existing Customer",
 	  	phone: "881-102-4703",
