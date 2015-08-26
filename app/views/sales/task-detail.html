@@ -11,18 +11,18 @@
 			<div><strong class='form-label'>Comments:</strong></div>
 		</div>
 		<div class='pair-name col-xs-6 col-sm-3'>
-			<div class='form-label'>{{task.acct}}</div>
-			<div class='form-label'>{{task.subj}}</div>
-			<div class='form-label'>{{task.date}}</div>
-			<div class='form-label'>{{task.notes}}</div>
+			<div class='form-label' id='assignedto'>{{task.acct}}</div>
+			<div class='form-label' id='subject'>{{task.subj}}</div>
+			<div class='form-label' id='duedate'>{{task.date}}</div>
+			<div class='form-label' id='comments'>{{task.notes}}</div>
 		</div>
 		<div class='pair-label col-xs-6 col-sm-3'>
 			<div><strong class='form-label'>Related To:</strong></div>
 			<div><strong class='form-label'>Name:</strong></div>
 		</div>
 		<div class='pair-name col-xs-6 col-sm-3'>
-			<div class='form-label'>{{task.opp}}</div>
-			<div class='form-label'>{{task.acct}}</div>
+			<div class='form-label' id='relatedto'>{{task.opp}}</div>
+			<div class='form-label' id='name'>{{task.acct}}</div>
 		</div>
 	</div>
 
@@ -33,8 +33,8 @@
 			<div><strong class='form-label'>Priorit :</strong></div> 
 		</div>
 		<div class='pair-name'>
-			<div class='form-label'>{{task.status}}</div> 
-			<div class='form-label'>{{task.priority}}</div> 
+			<div class='form-label' id='status'>{{task.status}}</div> 
+			<div class='form-label' id='priority'>{{task.priority}}</div> 
 		</div>
 	</div>
 
@@ -47,7 +47,7 @@
 		</div>
 
 		<div class='pair-name col-xs-6 col-sm-3'>
-			<div class='form-label'>{{task.created_by}}</div>
+			<div class='form-label' id='createdby'>{{task.created_by}}</div>
 		</div>
 
 		<div class='pair-label col-xs-6 col-sm-3'>
@@ -55,7 +55,7 @@
 		</div>
 
 		<div class='pair-name col-xs-6 col-sm-3'>
-			<div class='form-label'>{{task.last_edited}}</div>
+			<div class='form-label' id='lastedited'>{{task.last_edited}}</div>
 		</div>
 	</div>
 </div>
