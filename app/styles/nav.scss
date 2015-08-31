@@ -1,0 +1,29 @@
+
+
+.nav-delivery{
+  margin-bottom: 0px;
+}
+
+.nav-tab{
+  width: 650px;  
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+  li {
+    float: left;
+    display: block;
+  }
+}
+
+
+.navbar-inverse{
+  background-color: #34495e;
+  border-color: #34495e;
+  .navbar-brand{
+    color:white;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}

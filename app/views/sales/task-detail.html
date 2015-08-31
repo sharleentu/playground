@@ -5,10 +5,10 @@
 
 	<div class='row topic'>
 		<div class='pair-label col-xs-6 col-sm-3'>
-			<div><strong class='form-label'>Assigned To:</strong></div>
-			<div><strong class='form-label'>Subject:</strong></div>
-			<div><strong class='form-label'>Due Date:</strong></div>
-			<div><strong class='form-label'>Comments:</strong></div>
+			<div><strong class='form-label' for='assignedto'>Assigned To:</strong></div>
+			<div><strong class='form-label' for='subject'>Subject:</strong></div>
+			<div><strong class='form-label' for='duedate'>Due Date:</strong></div>
+			<div><strong class='form-label' for='comments'>Comments:</strong></div>
 		</div>
 		<div class='pair-name col-xs-6 col-sm-3'>
 			<div class='form-label' id='assignedto'>{{task.acct}}</div>
@@ -17,8 +17,8 @@
 			<div class='form-label' id='comments'>{{task.notes}}</div>
 		</div>
 		<div class='pair-label col-xs-6 col-sm-3'>
-			<div><strong class='form-label'>Related To:</strong></div>
-			<div><strong class='form-label'>Name:</strong></div>
+			<div><strong class='form-label' for='relatedto'>Related To:</strong></div>
+			<div><strong class='form-label' for='name'>Name:</strong></div>
 		</div>
 		<div class='pair-name col-xs-6 col-sm-3'>
 			<div class='form-label' id='relatedto'>{{task.opp}}</div>
@@ -29,10 +29,10 @@
 	<h3> Additional Information </h3>
 	<div class='row topic'>
 		<div class='pair-label col-xs-6 col-sm-3'>
-			<div><strong class='form-label'>Status:</strong></div> 
-			<div><strong class='form-label'>Priorit :</strong></div> 
+			<div><strong class='form-label' for='status'>Status:</strong></div> 
+			<div><strong class='form-label' for='priority'>Priority:</strong></div> 
 		</div>
-		<div class='pair-name'>
+		<div class='pair-name col-xs-6 col-sm-3'>
 			<div class='form-label' id='status'>{{task.status}}</div> 
 			<div class='form-label' id='priority'>{{task.priority}}</div> 
 		</div>
@@ -43,7 +43,7 @@
 
 	<div class='row topic'>
 		<div class='pair-label col-xs-6 col-sm-3'>
-			<div><strong class='form-label'> Created By:</strong></div>
+			<div><strong class='form-label' for='createdby'> Created By:</strong></div>
 		</div>
 
 		<div class='pair-name col-xs-6 col-sm-3'>
@@ -51,7 +51,7 @@
 		</div>
 
 		<div class='pair-label col-xs-6 col-sm-3'>
-			<div><strong class='form-label'>Last Edited By:</strong></div>
+			<div><strong class='form-label' for='lastedited'>Last Edited By:</strong></div>
 		</div>
 
 		<div class='pair-name col-xs-6 col-sm-3'>

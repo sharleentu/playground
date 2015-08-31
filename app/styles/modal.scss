@@ -1,0 +1,25 @@
+
+
+.model-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-part{
+  width: 80%;
+}
+
+.modal-header{
+	background-color: #34495e;
+	color: white;
+}
+
+.modal-body{
+	background-color: #ecf0f1;
+}
+
+.modal-footer{
+	border-top: none;
+	background-color: #ecf0f1;
+}

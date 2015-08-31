@@ -1,0 +1,74 @@
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center; 
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+.flex-row{
+  flex-direction: row;
+  margin: 20px 0 20px 0
+}
+
+.container-custom{
+  width: 80%;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+
+.gray-box{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.topic{
+  //background-color: #ecf0f1;
+  background-color: white;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 25px 25px 25px;
+  border: 1px solid #bdc3c7;
+  border-radius:4px;
+  .topic-name{
+    margin-bottom: 25px;
+    color: #2c3e50;
+  }
+}
+
+.container-top{
+  margin-top:40px;
+}
+
+.topic-main{
+  height: 300px;
+  margin: 30px 10px;
+}
+
+.topic-tab{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 25px 25px 25px;
+  border-left: 1px solid #bdc3c7;
+  border-right: 1px solid #bdc3c7;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.topic-delivery-main{
+  border: 1px solid #bdc3c7;
+}
+
+.topic-parts{
+  width: 80%;
+}

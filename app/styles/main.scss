@@ -3,19 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
 
-
-body {
-  padding: 0;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
@@ -23,12 +11,7 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
 .header {
-  //border-bottom: 1px solid #e5e5e5;
-  //margin-bottom: 10px;
-
-  /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
     margin-bottom: 0;
@@ -37,7 +20,6 @@ body {
   }
 }
 
-/* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
@@ -46,126 +28,6 @@ body {
 
 .container-narrow > hr {
   margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center; 
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-.container-custom{
-  width: 80%;
-  margin-left: auto;
-  margin-right:auto;
-}
-
-.gray-box{
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-
-.nav-delivery{
-  margin-bottom: 0px;
-}
-
-.nav-tab{
-  width: 650px;  
-  float: none;
-  list-style: none;
-  position: relative;
-  margin: 80px 0 0 10px;
-  text-align: left;
-  li {
-    float: left;
-    display: block;
-  }
-}
-
-.topic{
-  background-color: #ecf0f1;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 25px 25px 25px;
-  border-radius: 8px;
-  margin-top: 20px;
-  
-  .topic-name{
-    margin-bottom: 25px;
-  }
-}
-
-.topic-delivery{
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 25px;
-  padding: 10px 25px 25px 25px;
-  border-left: 1px solid #ecf0f1;
-  border-right: 1px solid #ecf0f1;
-  border-bottom: 1px solid #ecf0f1;
-}
-
-.btn-home{
-    background-color: #ecf0f1;
-  &:hover{
-    background-color: #e74c3c;
-    color: white;
-    border: #e74c3c;
-  }
-}
-
-.btn-right{
-  float: right;
-}
-.pair-label{
-  text-align: right;
-}
-
-.pair-name{
-  text-align: left;
-}
-
-.flex-row{
-  flex-direction: row;
-  margin: 20px 0 20px 0
-}
-
-.form-filter{
-width: 50%;
-display: inline;
-}
-
-#form-views{
-  height: 600px;
-}
-
-.btn-action{
-  float:right;
-  margin: 5px;
-}
-
-.btn-group{
-  float:right;
 }
 
 .btn-timesheet-favorite{
@@ -180,6 +42,7 @@ display: inline;
   display:flex;
   flex-direction: row;
 }
+
 .part-name{
   font-size: 18px;
   font-weight: bold;
@@ -190,34 +53,17 @@ display: inline;
   width: 100px;
   height: 100px;
 }
-.opp-row-new{
-  background-color: gray;
-}
-
-.form-label{
-line-height: 30px;
-}
-
-.form-input{
-  margin: 5px 0 5px 0;
-}
-
-.container-top{
-  margin-top:40px;
-}
 #new-opp{
   margin: 40px 0 0 0;
 }
 
-.model-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+body {
+  padding: 0;
+  font-size: 14px;
+  background-color: #ecf0f1;
 }
 
-.modal-part{
-  width: 80%;
-}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -231,10 +77,7 @@ line-height: 30px;
     padding-left: 0;
     padding-right: 0;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
+  
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;

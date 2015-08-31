@@ -1,3 +1,5 @@
+	<div class='topic'>
+	<br>
 	<ul class="nav nav-tabs">
 		<li ui-sref-active="active"><a ui-sref=".home" > Home </a></li>
 	  	<li ui-sref-active="active"><a ui-sref=".opp" > My Opportunities </a></li>
@@ -12,8 +14,10 @@
 	    <li class="disabled"><a > Groups </a></li>
 	    
 	</ul>
-
+<div class='topic-tab'>
   <div id="form-views" ui-view>
   	  <div ng-include="'views/sales/home.html'"></div>
   </div>
+  </div>
 
+</div>

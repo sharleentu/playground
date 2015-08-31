@@ -1,0 +1,25 @@
+
+
+.btn-home{
+    background-color: white;
+    font-size:12px;
+    border: none;
+  &:hover{
+    background-color: #2980b9;
+    color: white;
+    border: #e74c3c;
+  }
+}
+
+.btn-right{
+  float: right;
+}
+
+.btn-action{
+  float:right;
+  margin: 5px;
+}
+
+.btn-group{
+  float:right;
+}

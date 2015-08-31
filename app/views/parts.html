@@ -1,5 +1,6 @@
-
-  <h2> Order Parts </h2>
+  
+  <div class='topic'>
+  <h4> Order Parts </h4>
 
   <label>Select Product Type</label>
   <input type="text" class="form-control" ng-click='show_list(parts)' value='{{selected_part.name}}'><br>
@@ -24,6 +25,7 @@
 
 
 <button type="button" class="btn btn-default" ui-sref="parts-confirmation">Order Part(s)</button>
+</div>
 
 <script type='text/ng-template' id='parts.html'>
 	 <div class="modal">

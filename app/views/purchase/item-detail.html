@@ -1,31 +1,35 @@
 <a type="button" class="btn btn-primary" ui-sref="detail({id:order.id})"> Back </a>
-
-<h3> {{item.item_name}}</h3>
-
+<br><br>
 <div class='topic'>
+<h3> {{item.item_name}}</h3>
+<br>
 <div> {{ item.n_units }} piece(s)</div>
 <div> {{ item.subtotal }} USD </div>
-</div>
+</div><br>
 
-<h3> Materials</h3>
 <div class="topic">
+<h3> Materials</h3>
+<br>
   <div class='details'><strong>Material: </strong>{{ item.material }}</div>
   <div class='details'><strong>Material Group: </strong>{{item.material_group }}</div>
-</div>
+</div><br>
 
-<h3> Delivery on {{ item.date }} </h3>
 <div class="topic">
+<h3> Delivery on {{ item.date }} </h3>
+<br>
  	<div class='details'><strong>Office: </strong>{{ item.office }}</div>
     <div class='details'><strong>Address: </strong>{{ item.addr }}</div>
-</div>
+</div><br>
 
+<div class="topic">
 <h3> Notes </h3>
-<div class="topic">
+<br>
   <div>{{item.notes}}</div>
-</div>
+</div><br>
 
- <h3> Pricing Conditions </h3>
 <div class="topic">
+<h3> Pricing Conditions </h3>
+<br>
 <div class='details'><strong>Gross Price (PBXX): </strong>{{item.pbxx }}</div>
 <div class='details'><strong>Cash Discount (SKTO): </strong>{{item.skto }}</div>
 </div>

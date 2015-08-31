@@ -1,6 +1,6 @@
 <form ng-submit="processForm()">
-  <h1> Delivery Tracking </h1>
-
+<div class='topic-tab topic-delivery-main'>
+  <h3> Delivery Tracking </h3><br>
 	<ul class="nav nav-tabs">
 	  	<li ui-sref-active="active"><a ui-sref=".1" > 1. Contractor Details </a></li>
 	    <li ui-sref-active="active"><a ui-sref=".2"> 2. Recipient Details </a></li>
@@ -11,6 +11,7 @@
 
   <div id="form-views" ui-view>
   	  <div ng-include="'views/delivery/1.html'"></div>
+  </div>
   </div>
 </form>
 

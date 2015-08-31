@@ -1,6 +1,7 @@
 
-  <label>Search: </label>
-  <input type="text" class="form-control" ng-click='show_list(parts)' ng-model='searchTask'><br>
+<div class='topic'>
+<label>Search: </label>
+<input type="text" class="form-control" ng-click='show_list(parts)' ng-model='searchTask'><br>
 
 <a type="button" class="btn btn-primary btn-action" ui-sref='task-new'> New Task </a>
 
@@ -18,7 +19,7 @@
 	<tbody>
 		<tr ng-repeat="task in tasks | filter:searchTask"> 
 			<td>{{ task.date }} </td>
-			<td>{{ task.status }} </td>
+			<td><a type='button' class='btn btn-info btn-xs' disabled='disabled'> {{ task.status }} </a></td>
 			<td><a ui-sref='task-detail({id: task.id})'>{{ task.subj }} </a></td>
 			<td>{{ task.name }} </td>
 			<td>{{ task.opp }} </td>
@@ -27,4 +28,4 @@
 	</tbody>
 </table>	
 
-
+</div>
