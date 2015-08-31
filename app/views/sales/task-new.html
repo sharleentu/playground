@@ -2,8 +2,7 @@
   <div class='flex-row'>
     <h1> New Task </h1>
     <div class='btn-group'>
-      <a type="button" class="btn btn-primary" ng-click="add(newTask)" ui-sref='tasks'>Save</a>
-      <a type="button" class="btn btn-primary" ng-click="add(newTask)" ui-sref='task-new'> Save and New </a>
+      <a type="button" class="btn btn-primary" ng-click="add(newTask)" ui-sref='task-confirm'>Save</a>
       <a type="button" class="btn btn-primary" ui-sref='tasks'> Cancel </a>
     </div>
   </div>
@@ -21,7 +20,7 @@
 	  <div class='pair-name col-xs-6 col-sm-3'>
 	    <div><input class='form-input' type='text' id='assignedto' ng-model="newTask.acct"></div>
 	    <div><input class='form-input' type='text' id='subject' ng-model="newTask.subj"></div>
-	    <div><input class='form-input' type='text' id='duedate' ng-model="newTask.date"></div>
+	    <div><input class='form-input' type='date' id='duedate' ng-model="newTask.date"></div>
 	    <div><input class='form-input' type='text' id='comments' ng-model="newTask.notes"></div>
 	  </div>
 

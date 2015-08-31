@@ -219,6 +219,11 @@ angular
     templateUrl: 'views/sales/task-detail.html',
     controller: 'TaskCtrl'
   })
+  .state('task-confirm', {
+    url: '/task-confirm',
+    templateUrl: 'views/sales/task-confirm.html',
+    controller: 'TaskCtrl'
+  })
   .state('directory', {
     url: '/directory',
     templateUrl: 'views/directory.html',
